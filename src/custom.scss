@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Podkova:wght@400;700&family=Varela&display=swap');
+
+
+$lightGray: #2C383D;
+$darkGray: #172024;
+
+// Input
+$input-focus-border-color: transparent;
+$input-focus-color: #F5F5F5;
+$input-color: #F5F5F5;
+$input-border-color: transparent;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+$input-placeholder-color: rgba(255, 255, 255, 0.32);
+$input-font-size: 14px;
+$input-padding-y: 1rem;
+$input-padding-x: 1rem;
+
+$theme-colors: (
+  "gray": #273237,
+  "darkGray": #172024,
+  "darkerGray": #1F2A2F,
+  "lightGray": #2C383D,
+  "lighterGray": #ACACAC,
+  "slate": #8297A4,
+  "darkSlate": #6C8493,
+  "primary": #EB8E46,
+  "secondary": #F5F5F5
+  );
+  
+  // Fonts
+  $krona: 'Krona One', sans-serif;
+  $podkova: 'Podkova', serif;
+  $varela: 'Varela', sans-serif;
+
+  // input
+  $input-font-family: $varela;
+  
+  @mixin font-scheme($font, $weight){
+    font-family: $font;
+    font-weight: $weight;
+  }
+  
+@mixin card-scheme($bgColor, $text){
+  background-color: $bgColor;
+  color: $text;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden
+}
+
+// Component styles
+#title {
+ 
+  h3 {
+    @include font-scheme($krona, 400);
+    font-size: 20px
+  }
+
+  h1 {
+    @include font-scheme($podkova, 400);
+    font-size: 35px
+  }
+}
+
+#navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 55;
+
+  .navbar {
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+
+  .no-border {
+    border-bottom: none!important;
+  }
+
+  .nav-selected, .navbar-brand {
+    @include font-scheme($krona, 400);
+    color: #000!important;
+  }
+
+  .white-navbar-brand {
+    color: #f5f5f5!important;
+  }
+
+  .nav-link {
+    @include font-scheme($krona, 400);
+    color: rgba(0,0,0,0.5);
+    font-size: 12px!important;
+    margin-right: 1rem;
+  } 
+
+  .white-nav-link {
+    color: rgba(245,245,245,0.5)!important;
+  } 
+
+  .nav-link:hover {
+    cursor: pointer!important;
+    color: #000!important;
+  }
+
+  .white-nav-link:hover {
+    color: #f5f5f5!important;
+  } 
+}
+
+
+#home {
+  #carousel-component {
+    position: relative;
+
+    .carousel-caption {
+      bottom: 13.25rem!important;
+      // left: 8%!important;
+      text-align: left!important;
+
+      #secondImg {
+        h3, h2, p {
+          text-align: right!important;
+        }
+
+        p {
+          align-self: flex-end!important;
+        }
+      }
+
+      h3 {
+        @include font-scheme($krona,400);
+        color: #000;
+      }
+      
+      h2 {
+        @include font-scheme($podkova,400);
+        color: #000;
+        font-size: 50px;
+      }
+
+      p {
+        @include font-scheme($varela,400);
+        color: #000;
+        line-height: 179%;
+        max-width: 550px;
+        
+      }
+
+    }
+   img {
+    object-fit: cover;
+    object-position: center;
+    height: 600px!important;
+   }
+  }
+}
+
+// ////////////// About 
+#about {
+  margin-top: 10rem;
+
+  #about-img {
+    img {
+      height: 450px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    #aboutImg2 {
+      position: relative;
+      top: 15%;
+    }
+  }
+
+  #about-paragraph {
+   
+
+    p {
+      @include font-scheme($varela, 400);
+      line-height: 179%;
+      max-width: 550px;
+      font-size: 18px;
+    }
+  }
+}
+
+// Services //////////////
+#services {
+  margin-top: 15rem;
+
+  .service-cards {
+    h4 {
+      @include font-scheme($podkova, 400);
+    }
+    p {
+      @include font-scheme($varela, 400);
+      line-height: 179%;
+      font-size: 14px;
+    }
+  }
+}
+
+// Projects ////////////
+#projects {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  #project-item {
+    position: relative;
+    
+    .dark-overlay {
+      display: none!important;
+      padding: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(20, 25, 28, .76);
+
+      h4, h5, h2 {
+        @include font-scheme($krona, 400)
+      }
+
+      h4 {
+        max-width: 200px;
+        font-size: 16px;
+        line-height: 163%;
+      }
+
+      h5 {
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  #project-item:hover {
+      .dark-overlay {
+        display: flex!important;
+        cursor: pointer!important;
+    }
+  }
+
+  .col-md-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+// Team ////////////
+#team {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  #team-member {
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 400px;
+    }
+
+    h4, h5 {
+      @include font-scheme($krona, 400)
+    }
+
+    h4 {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+
+    h5 {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+// Testimonials ////////////
+#testimonial {
+  background-color: $lightGray;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  #client-reviews {
+    h2, h5 {
+      @include font-scheme($krona, 400)
+    }
+
+    h5 {
+      letter-spacing: 1.5px;
+      font-size: 12px;
+    }
+  }
+
+  #comment-slider {
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 95px;
+    }
+
+    h3 {
+      @include font-scheme($podkova, 700);
+      font-size: 24px;
+    }
+
+     h5, p {
+      @include font-scheme($krona, 400)
+     }
+
+     h5 {
+      font-size: 12px;
+     }
+
+     p {
+      font-size: 10px;
+      letter-spacing: 1px;
+     }
+
+     #comment {
+      font-size: 16px!important;
+      line-height: 179%;
+      @include font-scheme($varela, 400)
+     }
+  }
+}
+
+// Explore ////////////
+#explore {
+  
+  .explore-aesthetica {
+    position: relative;
+    background-image: url('./assets/img/exploreImg.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+
+    .dark-overlay {
+      position: absolute;
+      background-color: rgba(0,0,0,0.55);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      h1, h3 {
+        @include font-scheme($varela, 400)
+      }
+
+      h1 {
+        font-size: 54px;
+      }
+
+      h3 {
+        max-width: 700px;
+        line-height: 141.8%;
+        font-size: 20px;
+      }
+
+     
+    }
+  }
+
+}
+
+// Contact ////////////
+.contact {
+  background-color: $darkGray;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  h1 {
+    @include font-scheme($varela, 400)
+  }
+
+  #contact-form {
+    margin-top: 2rem;
+  }
+
+  .contact-number {
+    h3 {
+      @include font-scheme($krona, 400);
+      font-size: 22px;
+    }
+  }
+
+  .details {
+    h4 {
+      @include font-scheme($varela, 400);
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .social-icons {
+    a:hover {
+      cursor: pointer;
+    }
+  }
+
+  .footer {
+    h2, p {
+      @include font-scheme($krona, 400)
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    a:hover {
+      text-decoration: none;
+     
+    }
+  }
+}
+
+
+// INDIVIDUAL HOUSE PROJECT PAGES //////////////////
+#house-landing {
+  img {
+    object-fit: cover;
+    object-position: center;
+    height: 550px!important;
+   }
+
+   .carousel-caption {
+    background-color: rgba(0,0,0,0.52)!important;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    text-align: left!important;
+
+    h4 {
+      @include font-scheme($krona, 400);
+      font-size: 12px;
+      max-width: 100px;
+      line-height: 150%;
+    }
+    
+    h5 {
+      @include font-scheme($varela, 400);
+      font-size: 16px;
+    }
+
+   }
+}
+
+#living-rooms {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  p {
+    @include font-scheme(varela, 400);
+    font-size: 18px;
+  }
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    padding-left: 12px;
+    padding-right: 1px;
+  }
+}
+
+#kitchen {
+  margin-bottom: 5rem;
+  #title {
+    h3, h1 {
+      text-align: right!important;
+    }
+  }
+
+  #kitchen-description {
+    h1 {
+      @include font-scheme($podkova, 400)
+    }
+    p {
+      @include font-scheme($varela, 400)
+    }
+  }
+
+  img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+#bedrooms {
+  margin-bottom: 5rem;
+  #title {
+    h3, h1 {
+      text-align: right!important
+    }
+  }
+  .bedroom-carousel{
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 400px!important;
+    }
+  }
+}
+
+#bathrooms {
+  margin-bottom: 10rem;
+  .bathroom-carousel{
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 400px!important;
+    }
+  }
+}
+
+#client-engagement {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  min-height: 200px;
+
+  .dark-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.62);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+  }
+}
+
+
+// Media Query
+@media (max-width: 576px) {
+
+  #home {
+    #navbarNav {
+      ul {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  #title {
+      h3, h1 {
+        text-align: center;
+      }
+    }
+
+  #home {
+    #carousel-component {
+  
+      .carousel-caption {
+        bottom: 10.25rem!important;
+        text-align: center!important;
+
+        h2 {
+          font-size: 38px;
+        }
+
+        #secondImg {
+          h3, h2, p {
+            text-align: center!important;
+          }
+  
+          p {
+            align-self: center!important;
+          }
+        }
+      }
+    }
+  }
+
+  #about {
+    #about-paragraph {
+      .align-self-end {
+        align-self: center;
+        h3, h1, p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #services {
+    .service-cards {
+      .col-md-4 {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  #testimonial {
+    #client-reviews {
+      justify-content: center;
+      .d-flex {
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    #comment-slider {
+      margin-top: 2rem;
+    }
+  }
+
+  .contact {
+    .flex-column {
+      margin-top: 4rem;
+      
+      div {
+        align-self: flex-start!important;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  #house-landing {
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 400px!important;
+     }
+    .carousel-caption {
+      display: none;
+    }
+  }
+
+  #living-rooms {
+    p {
+      text-align: center!important;
+    }
+  }
+
+  #kitchen {
+    .align-items-end {
+      align-items: center!important;
+    }
+    #title {
+      h3, h1 {
+        text-align: center!important;
+      }
+    }
+
+    #kitchen-description {
+      h1 {
+        font-size: 32px;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+
+   #dining {
+      margin-left: 0px;
+      margin-right: 0px;
+
+      .col-md-8 {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    
+   } 
+}
+
+    #bedrooms {
+      .align-items-end {
+        align-items: center!important;
+        #title {
+          h3, h1 {
+            text-align: center!important;
+          }
+      }
+    }
+  }
+
+  #client-engagement {
+    min-height: 150px;
+    .dark-overlay {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      .col-4 {
+        h2 {
+          font-size: 24px;
+        }
+
+        h5 {
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
