@@ -22,13 +22,18 @@ function Kitchen({data}) {
             <p className="text-secondary">Built with the best furniture and appliances to compliment the minimalist, modern look</p>
           </div>
           <div className="col-md-8">
+          <a href={data.kitchenImgs[0]} data-toggle="lightbox" data-gallery="img-gallery">
             <img src={data.kitchenImgs[0]} alt="kitchen" className="w-100" />
+          </a>
           </div>
         </div>
 
         <div className="row mt-5 align-self-start w-100" id="dining">
           <div className="col-md-8 ">
-          <img src={data.kitchenImgs[1]} alt="dining" className="w-100" />
+          <a href={data.kitchenImgs[1]} data-toggle="lightbox" data-gallery="img-gallery">
+            <img src={data.kitchenImgs[1]} alt="dining" className="w-100" />
+          </a>
+
           </div>
         
         </div>

@@ -18,11 +18,13 @@ function ProjectCarousel({variant, data, imgs}) {
 
       {imgs.map((item, index)=> (
         <Carousel.Item key={index}>
-        <img
-          className="d-block w-100"
-          src={item}
-          alt="First slide"
-        />
+          <a href={item} data-toggle="lightbox" data-gallery="img-gallery">
+            <img
+              className="d-block w-100"
+              src={item}
+              alt="First slide"
+            />
+        </a>
 
         {variant === 'with-caption' && (
         <Carousel.Caption>

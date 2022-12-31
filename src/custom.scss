@@ -21,6 +21,7 @@ $theme-colors: (
   "gray": #273237,
   "darkGray": #172024,
   "darkerGray": #1F2A2F,
+  "darkestGray": #0A0F11,
   "lightGray": #2C383D,
   "lighterGray": #ACACAC,
   "slate": #8297A4,
@@ -297,6 +298,20 @@ html {
   }
 
   #comment-slider {
+    .slick-track
+    {
+        display: flex !important;
+    }
+
+    .slick-initialized .slick-slide {
+      display: flex!important;
+    }
+    
+    .slick-slide
+    {
+        height: inherit !important;
+  
+    }
     img {
       object-fit: cover;
       object-position: center;
@@ -453,6 +468,20 @@ html {
    }
 }
 
+#house-details {
+  p {
+    @include font-scheme($varela, 400);
+    margin-bottom: 0px;
+    color: #f5f5f5
+  }
+
+  p:nth-child(1){
+    @include font-scheme($krona, 400);
+    max-width: 100px;
+    font-size: 12px;
+  }
+}
+
 #living-rooms {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -467,6 +496,10 @@ html {
     object-position: center;
     padding-left: 12px;
     padding-right: 1px;
+  }
+
+  img:hover {
+    cursor: pointer;
   }
 }
 
@@ -544,16 +577,7 @@ html {
 // Media Query
 @media (max-width: 576px) {
 
-  #home {
-    #navbarNav {
-      ul {
-        margin-top: 1rem;
-        padding-left: 1rem;
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.9);
-      }
-    }
-  }
+
 
 }
 
@@ -629,18 +653,15 @@ html {
       }
     }
   }
-}
 
-
-@media (max-width: 992px) {
-  #house-landing {
-    img {
-      object-fit: cover;
-      object-position: center;
-      height: 400px!important;
+  #bedrooms {
+    .align-items-end {
+      align-items: center!important;
+      #title {
+        h3, h1 {
+          text-align: center!important;
+        }
      }
-    .carousel-caption {
-      display: none;
     }
   }
 
@@ -682,17 +703,36 @@ html {
     
    } 
 }
+}
 
-    #bedrooms {
-      .align-items-end {
-        align-items: center!important;
-        #title {
-          h3, h1 {
-            text-align: center!important;
-          }
+
+@media (max-width: 992px) {
+  #home {
+    .navbar {
+      border-bottom: none!important;
+    }
+
+    #navbarNav {
+      ul {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.9);
       }
     }
   }
+
+  #house-landing {
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 400px!important;
+     }
+    .carousel-caption {
+      display: none;
+    }
+  }
+
 
   #client-engagement {
     min-height: 150px;

@@ -11,7 +11,7 @@ function Navbar({navColor}) {
       position: `${navColor === 'white' ? 'relative' : 'absolute'}`
     }}>
       <div className="container mt-3">
-        <nav className={`navbar navbar-expand-sm mb-3 ${navColor === 'white' && 'no-border'}`} id="main-nav">
+        <nav className={`navbar navbar-expand-lg mb-3 ${navColor === 'white' && 'no-border'}`} id="main-nav">
           <Link to={'/'} className={`navbar-brand ${navColor === 'white' && 'white-navbar-brand'}`}>Aesthetica</Link>    
 
           {location.pathname === '/' ? (

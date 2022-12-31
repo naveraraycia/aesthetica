@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
 import {useState, useEffect} from 'react'
 import ProjectData from "../data/ProjectData";
 import Spinner from "../components/Spinner";
+import HouseDetails from "../components/HouseDetails";
 
 function HousingProject() {
   document.body.style.backgroundColor = '#172024';
@@ -37,6 +38,10 @@ function HousingProject() {
         <div className="container">
             <ProjectCarousel data={projectData} imgs={projectData.landingImgs} variant={'with-caption'} /> 
         </div>
+      </section>
+
+      <section id="house-details" className="d-flex d-lg-none">
+        <HouseDetails data={projectData} />
       </section>
 
       <section id="living-rooms">

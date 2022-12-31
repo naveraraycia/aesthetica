@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function Card({children, variant}) {
   return (
-    <div className={`card p-3 ${variant === 'service' ? 'service-card bg-darkGray' : 'comment-card bg-darkerGray'}`}>
+    <div className={`card h-100 ${variant === 'service' ? 'p-3 service-card bg-darkGray' : variant === 'house-card' ? 'house-card p-1 bg-darkestGray' : variant === 'comment-card'? 'p-3 comment-card bg-darkerGray': ''} `}>
       <div className="card-body">
         {children}
       </div>
@@ -11,7 +11,7 @@ function Card({children, variant}) {
 }
 
 Card.defaultProps = {
-  variant: 'service'
+  variant: 'comment-card'
 }
 
 Card.propTypes = {

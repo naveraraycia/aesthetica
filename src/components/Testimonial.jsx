@@ -15,7 +15,7 @@ function Testimonial() {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     speed: 500,
     slidesToShow: 1,
@@ -42,7 +42,7 @@ function Testimonial() {
           </div>
           <div className="col-md-6" id="comment-slider">
           <Slider {...settings}>
-            <Card>
+            <Card variant={'comment-card'}>
               <div className="d-flex">
                 <img src={img1} alt="Avatar" className="rounded-circle" />
 
@@ -53,10 +53,10 @@ function Testimonial() {
                 </div>
               </div>
 
-              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras sed semper in egestas parturient consequat. Pellentesque sed semper tempor.</p>
+              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augu. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum, rerum ipsa eaque soluta facere.</p>
             </Card>
 
-            <Card>
+            <Card variant={'comment-card'}>
             <div className="d-flex">
                 <img src={img2} alt="Avatar" className="rounded-circle" />
 
@@ -67,10 +67,10 @@ function Testimonial() {
                 </div>
               </div>
 
-              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras sed semper in egestas parturient consequat. Pellentesque sed semper tempor.</p>
+              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augu. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum, rerum ipsa eaque soluta facere.</p>
             </Card>
             
-            <Card>
+            <Card variant={'comment-card'}>
             <div className="d-flex">
                 <img src={img3} alt="Avatar" className="rounded-circle" />
 
@@ -81,10 +81,10 @@ function Testimonial() {
                 </div>
               </div>
 
-              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras sed semper in egestas parturient consequat. Pellentesque sed semper tempor.</p>
+              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augu. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum, rerum ipsa eaque soluta facere.</p>
             </Card>
 
-            <Card>
+            <Card variant={'comment-card'}>
             <div className="d-flex">
                 <img src={img4} alt="Avatar" className="rounded-circle" />
 
@@ -95,7 +95,7 @@ function Testimonial() {
                 </div>
               </div>
 
-              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras sed semper in egestas parturient consequat. Pellentesque sed semper tempor.</p>
+              <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augu. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum, rerum ipsa eaque soluta facere.</p>
             </Card>
 
           </Slider>

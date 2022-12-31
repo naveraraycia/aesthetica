@@ -63,7 +63,8 @@ function LivingRoom({data}) {
         <div className="living-room-photos">
         <Slider {...settings}>
           {data.livingroomImgs.map((item, index)=>(
-            <img key={index} src={item} alt="living room" />
+  
+              <img href={item} data-toggle="lightbox" data-gallery="img-gallery" key={index} src={item} alt="living room" />
           ))}
           </Slider>
         </div>
