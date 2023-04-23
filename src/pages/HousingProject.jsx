@@ -11,6 +11,8 @@ import {useState, useEffect} from 'react'
 import ProjectData from "../data/ProjectData";
 import Spinner from "../components/Spinner";
 import HouseDetails from "../components/HouseDetails";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function HousingProject() {
   document.body.style.backgroundColor = '#172024';
@@ -23,9 +25,14 @@ function HousingProject() {
       setProjectData(item)
      }
     })
-
-
   },[params.id])
+
+  useEffect(()=>{
+    AOS.init({
+      offset: 200,
+      once: false
+    })
+  },[])
 
   if(!projectData.landingImgs) {
     return <Spinner />

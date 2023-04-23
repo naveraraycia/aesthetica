@@ -164,6 +164,7 @@ html {
 // ////////////// About 
 #about {
   margin-top: 10rem;
+  margin-bottom: 10rem;
 
   #about-img {
     img {
@@ -193,23 +194,25 @@ html {
 // Services //////////////
 #services {
   margin-top: 15rem;
+  margin-bottom: 10rem;
 
   .service-cards {
     h4 {
       @include font-scheme($podkova, 400);
+      font-size: 18px
     }
     p {
       @include font-scheme($varela, 400);
       line-height: 179%;
-      font-size: 14px;
+      font-size: 13px;
     }
   }
 }
 
 // Projects ////////////
 #projects {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
   #project-item {
     position: relative;
     
@@ -254,7 +257,7 @@ html {
 
 // Team ////////////
 #team {
-  margin-top: 10rem;
+  margin-top: 15rem;
   margin-bottom: 10rem;
 
   #team-member {
@@ -284,7 +287,7 @@ html {
 #testimonial {
   background-color: $lightGray;
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 15rem;
 
   #client-reviews {
     h2, h5 {
@@ -346,7 +349,7 @@ html {
 
 // Explore ////////////
 #explore {
-  
+  background-color: $lightGray;
   .explore-aesthetica {
     position: relative;
     background-image: url('./assets/img/exploreImg.jpg');
@@ -385,7 +388,7 @@ html {
 // Contact ////////////
 .contact {
   background-color: $darkGray;
-  padding-top: 7rem;
+  padding-top: 9rem;
   padding-bottom: 2rem;
 
   h1 {

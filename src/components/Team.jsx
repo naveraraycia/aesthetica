@@ -7,22 +7,23 @@ import img4 from '../assets/img/team4.jpg'
 
 
 function Team() {
+
   return (
    <>
   <div className="container">
     <Title subTitle={'our team'} mainTitle={'Meet our Engineers and Architects'} />
 
     <div className="row">
-      <div className="col-md-3">
+      <div className="col-md-3" data-aos="fade-right" data-aos-delay="250" data-aos-duration="700">
         <TeamMember img={img1} name={'James Stevenson'} position={'architect'} />
       </div>
-      <div className="col-md-3">
+      <div className="col-md-3" data-aos="fade-right" data-aos-delay="400" data-aos-duration="700">
         <TeamMember img={img2} name={'Megan Jones'} position={'engineer'} />
       </div>
-      <div className="col-md-3">
+      <div className="col-md-3" data-aos="fade-right" data-aos-delay="600" data-aos-duration="700">
         <TeamMember img={img3} name={'Mary Wood'} position={'architect'} />
       </div>
-      <div className="col-md-3">
+      <div className="col-md-3" data-aos="fade-right" data-aos-delay="800" data-aos-duration="700">
         <TeamMember img={img4} name={'Chris Morgan'} position={'engineer'} />
       </div>
     </div>
