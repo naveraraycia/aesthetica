@@ -11,8 +11,6 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/project/:projectName/:id' element={<HousingProject />} />
       </Routes>
-
-
     </Router>
 
     </>

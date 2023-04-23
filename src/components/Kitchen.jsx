@@ -33,9 +33,7 @@ function Kitchen({data}) {
           <a href={data.kitchenImgs[1]} data-toggle="lightbox" data-gallery="img-gallery">
             <img src={data.kitchenImgs[1]} alt="dining" className="w-100" />
           </a>
-
-          </div>
-        
+          </div>    
         </div>
       </div>
     </>
