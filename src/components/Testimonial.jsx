@@ -28,16 +28,15 @@ function Testimonial() {
         <div className="row">
           <div className="col-md-6">
             <Title subTitle={'testimonial'} mainTitle={'Client Reviews'} />
-            <div className="d-flex mt-5" id="client-reviews">
+            <p className="testimonial-description" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras.</p>
+            <div className="d-flex mt-2" id="client-reviews">
               <div className="d-flex flex-column mr-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">
-                <GiDiamondTrophy color={'#EB8E46'} size={60} />
                 <div className="text-secondary mt-4">
                   <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="550">5</h2>
                   <h5 className="text-secondary" data-aos="fade-up" data-aos-delay="400" data-aos-duration="550">Years Experience</h5>
                 </div>
               </div>
               <div className="d-flex flex-column" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">
-                <BsFillEmojiSmileFill color={'#EB8E46'} size={60} />
                   <h2 className="text-secondary mt-4"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="550">75</h2>
                   <h5 className="text-secondary"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="550">Satisfied Customers</h5>
               </div>

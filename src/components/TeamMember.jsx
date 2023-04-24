@@ -4,7 +4,7 @@ function TeamMember({img, name, position}) {
     <div className="d-flex flex-column align-items-center" id="team-member">
       <img src={img} alt="Team Member" className="img-fluid mb-4" />
       <h4 className="text-capitalize text-secondary mb-2">{name}</h4>
-      <h5 className="text-uppercase text-secondary">{position}</h5>
+      <h5 className="text-uppercase text-primary">{position}</h5>
     </div>
   )
 }

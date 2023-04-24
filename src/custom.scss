@@ -18,15 +18,15 @@ $input-padding-y: 1rem;
 $input-padding-x: 1rem;
 
 $theme-colors: (
-  "gray": #273237,
-  "darkGray": #172024,
+  "gray": #0F0F0F,
+  "darkGray": #042031,
   "darkerGray": #1F2A2F,
   "darkestGray": #0A0F11,
-  "lightGray": #2C383D,
+  "lightGray": #1F1F1F,
   "lighterGray": #ACACAC,
-  "slate": #8297A4,
+  "slate": #4CB3F3,
   "darkSlate": #6C8493,
-  "primary": #EB8E46,
+  "primary": #4CB3F3,
   "secondary": #F5F5F5
   );
   
@@ -69,14 +69,33 @@ html {
   }
 }
 
+#title2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  @include font-scheme($krona, 400);
+  max-width: 900px;
+
+  h1 {
+    letter-spacing: 1rem;
+    font-size: 30px;
+  }
+
+  h3 {
+    letter-spacing: 0.7rem;
+    font-size: 17px;
+  }
+}
+
 #navbar {
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 55;
+  position: absolute;
+  bottom: 30px;
 
   .navbar {
-    border-bottom: 1px solid rgba(0,0,0,0.12);
+    // border-bottom: 1px solid rgba(0,0,0,0.12);
   }
 
   .no-border {
@@ -85,7 +104,7 @@ html {
 
   .nav-selected, .navbar-brand {
     @include font-scheme($krona, 400);
-    color: #000!important;
+    color: #fff!important;
   }
 
   .white-navbar-brand {
@@ -94,7 +113,7 @@ html {
 
   .nav-link {
     @include font-scheme($krona, 400);
-    color: rgba(0,0,0,0.5);
+    color: rgba(255,255,255,0.5);
     font-size: 12px!important;
     margin-right: 1rem;
   } 
@@ -105,7 +124,7 @@ html {
 
   .nav-link:hover {
     cursor: pointer!important;
-    color: #000!important;
+    color: #fff!important;
   }
 
   .white-nav-link:hover {
@@ -115,6 +134,54 @@ html {
 
 
 #home {
+  background: url('./assets/img/landing-page-img.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  padding: 5rem;
+
+  .socials-overlay {
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.50);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    z-index: 50;
+
+    a {
+      margin-top: 1rem;
+    }
+
+    a:hover{
+      svg{
+        color: white!important
+      }
+    }
+  }
+
+  .hero-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    flex-direction: column;
+
+  }
+
+
   #carousel-component {
     position: relative;
 
@@ -205,6 +272,7 @@ html {
       @include font-scheme($varela, 400);
       line-height: 179%;
       font-size: 13px;
+      color: white
     }
   }
 }
@@ -285,9 +353,13 @@ html {
 
 // Testimonials ////////////
 #testimonial {
-  background-color: $lightGray;
   padding-top: 10rem;
   padding-bottom: 15rem;
+
+  .testimonial-description{
+    max-width: 400px;
+    color: white;
+  }
 
   #client-reviews {
     h2, h5 {
@@ -301,6 +373,14 @@ html {
   }
 
   #comment-slider {
+    .slick-dots li.slick-active button:before {
+      color: #4CB3F3 !important
+     }
+
+     .slick-dots li button:before {
+      color: rgba(76, 179, 243, .26) !important
+    }
+
     .slick-track
     {
         display: flex !important;
@@ -387,7 +467,6 @@ html {
 
 // Contact ////////////
 .contact {
-  background-color: $darkGray;
   padding-top: 9rem;
   padding-bottom: 2rem;
 

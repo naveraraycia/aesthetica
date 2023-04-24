@@ -22,8 +22,8 @@ function Contact() {
           <div className="col-md-6 d-flex flex-column align-items-center">
             <div>
               <div className="contact-number mb-5">
-                <h3 className="text-secondary" data-aos="fade-left" data-aos-delay="350" data-aos-duration="500">+63 917 000 0000</h3>
-                <h3 className="text-secondary" data-aos="fade-left" data-aos-delay="450" data-aos-duration="500">+63 917 777 0000</h3>
+                <h3 className="text-secondary" data-aos="fade-left" data-aos-delay="350" data-aos-duration="500"><span className='text-primary'>+</span>63 917 000 0000</h3>
+                <h3 className="text-secondary" data-aos="fade-left" data-aos-delay="450" data-aos-duration="500"><span className='text-primary'>+</span>63 917 777 0000</h3>
               </div>
 
               <div className="details mb-5" data-aos="fade-left" data-aos-delay="550" data-aos-duration="500">
@@ -33,15 +33,15 @@ function Contact() {
 
               <div className="social-icons d-flex" data-aos="fade-left" data-aos-delay="650" data-aos-duration="500">
                 <a href="https://www.facebook.com/" className="mr-1" target={'_blank'} rel="noreferrer">
-                  <AiFillFacebook color="#F5F5F5" size={40} />
+                  <AiFillFacebook color="#4CB3F3" size={40} />
                 </a>
 
                 <a href="https://twitter.com/" className="mr-1" target={'_blank'} rel="noreferrer">
-                  <AiFillTwitterSquare color="#F5F5F5" size={40} />
+                  <AiFillTwitterSquare color="#4CB3F3" size={40} />
                 </a>
 
                 <a href="https://www.instagram.com/" target={'_blank'} rel="noreferrer">
-                  <AiFillInstagram color="#F5F5F5" size={40} />
+                  <AiFillInstagram color="#4CB3F3" size={40} />
                 </a>
               </div>
 
@@ -51,7 +51,7 @@ function Contact() {
 
         <div className="d-flex justify-content-between footer mt-5">
         <a href={`/`}>
-            <h2 className="text-secondary">Aesthetica</h2>
+            <h2 className="text-secondary text-uppercase">Aesthetica</h2>
           </a>
           <p className="text-secondary">&copy; 2022 <span>RMFN</span></p>
         </div>

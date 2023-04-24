@@ -12,46 +12,46 @@ function Services() {
         <div className='row service-cards'>
           <div className="col-md-4" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
             <Card variant={'service'}>
-              <GiPaintBucket color={'#8297A4'} size={40} />
+              <GiPaintBucket color={'#4CB3F3'} size={40} />
               <h4 className="text-slate mt-4">Architectural Design</h4>
-              <p className="text-darkSlate">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
+              <p>Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
             </Card>
           </div>
           <div className="col-md-4" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
             <Card variant={'service'}>
-                <GiClawHammer color={'#8297A4'} size={40} />
+                <GiClawHammer color={'#4CB3F3'} size={40} />
                 <h4 className="text-slate mt-4">Construction</h4>
-                <p className="text-darkSlate">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
               </Card>
           </div>
           <div className="col-md-4" data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">
               <Card variant={'service'}>
-                  <GiPalette color={'#8297A4'} size={40} />
+                  <GiPalette color={'#4CB3F3'} size={40} />
                   <h4 className="text-slate mt-4">Interior Design</h4>
-                  <p className="text-darkSlate">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
                 </Card>
           </div>
         </div>
         <div className="row service-cards mt-4">
           <div className="col-md-4" data-aos="fade-up" data-aos-duration="500">
             <Card variant={'service'}>
-              <GiTalk color={'#8297A4'} size={40} />
+              <GiTalk color={'#4CB3F3'} size={40} />
               <h4 className="text-slate mt-4">Consulting</h4>
-              <p className="text-darkSlate">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
+              <p>Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
             </Card>
           </div>
           <div className="col-md-4" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">
             <Card variant={'service'}>
-                <GiPencilRuler color={'#8297A4'} size={40} />
+                <GiPencilRuler color={'#4CB3F3'} size={40} />
                 <h4 className="text-slate mt-4">Planning</h4>
-                <p className="text-darkSlate">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
+                <p>Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
               </Card>
           </div>
           <div className="col-md-4" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
               <Card variant={'service'}>
-                  <GiBed color={'#8297A4'} size={40} />
+                  <GiBed color={'#4CB3F3'} size={40} />
                   <h4 className="text-slate mt-4">Furniture Design</h4>
-                  <p className="text-darkSlate">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue.</p>
                 </Card>
           </div>
         </div>

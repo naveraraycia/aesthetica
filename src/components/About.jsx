@@ -9,7 +9,7 @@ function About() {
   useEffect(()=>{
     AOS.init({
       offset: 200,
-      once: true
+      once: false
     })
   },[])
   return (

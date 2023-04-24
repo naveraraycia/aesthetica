@@ -7,16 +7,16 @@ function Navbar({navColor}) {
 
   return (
     
-    <div id="navbar" style={{
-      position: `${navColor === 'white' ? 'relative' : 'absolute'}`
-    }}>
+    // <div id="navbar" style={{
+    //   position: `${navColor === 'white' ? 'relative' : 'absolute'}`
+    // }}>
+    <div id="navbar">
       <div className="container mt-3">
         <nav className={`navbar navbar-expand-lg mb-3 ${navColor === 'white' && 'no-border'}`} id="main-nav">
-          <Link to={'/'} className={`navbar-brand ${navColor === 'white' && 'white-navbar-brand'}`}>Aesthetica</Link>    
 
-          {location.pathname === '/' ? (
+          {location.pathname === '/' && (
             <>
-            
+{/*             
           <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
             {navColor === 'white' ? (
               <AiOutlineMenu color="#f5f5f5" />
@@ -24,7 +24,7 @@ function Navbar({navColor}) {
             (
               <AiOutlineMenu color="#000" />
             )}
-            </button>
+            </button> */}
  
             <div id="navbarNav" className="collapse navbar-collapse justify-content-end">
               <ul className="navbar-nav">
@@ -46,39 +46,39 @@ function Navbar({navColor}) {
               </ul>
             </div>
             </>
-          ) : (
-            <>
-              <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            {navColor === 'white' ? (
-              <AiOutlineMenu color="#f5f5f5" />
-            ) : 
-            (
-              <AiOutlineMenu color="#000" />
-            )}
-            </button>
+          )
+            // <>
+            //   <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            // {navColor === 'white' ? (
+            //   <AiOutlineMenu color="#f5f5f5" />
+            // ) : 
+            // (
+            //   <AiOutlineMenu color="#000" />
+            // )}
+            // </button>
  
-            <div id="navbarNav" className="collapse navbar-collapse justify-content-end">
-              <ul className="navbar-nav">
-                <li className={"nav-item"}>
-                  <a href="#living-rooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Living Room</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#kitchen" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Kitchen</a>
+            // <div id="navbarNav" className="collapse navbar-collapse justify-content-end">
+            //   <ul className="navbar-nav">
+            //     <li className={"nav-item"}>
+            //       <a href="#living-rooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Living Room</a>
+            //     </li>
+            //     <li className="nav-item">
+            //       <a href="#kitchen" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Kitchen</a>
   
-                </li>
-                <li className="nav-item">
-                  <a href="#bedrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bedroom</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#bathrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bathroom</a>
-                </li>
-                <li className="nav-item">
-                  <a href="#housing-contact" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Contact us</a>
-                </li>
-              </ul>
-            </div>
-            </>
-          )}
+            //     </li>
+            //     <li className="nav-item">
+            //       <a href="#bedrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bedroom</a>
+            //     </li>
+            //     <li className="nav-item">
+            //       <a href="#bathrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bathroom</a>
+            //     </li>
+            //     <li className="nav-item">
+            //       <a href="#housing-contact" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Contact us</a>
+            //     </li>
+            //   </ul>
+            // </div>
+            // </>
+          }
         </nav>
       </div>
     </div>
