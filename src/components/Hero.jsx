@@ -7,8 +7,10 @@ function Hero() {
     <>
 
     <div className='hero-overlay'>
+      <div className="container d-flex justify-content-center align-items-center flex-column ">
       <Title2 mainTitle="aesthetica" subTitle="construction & design solutions" />
       <Navbar />
+      </div>
 
     </div>
 
