@@ -45,7 +45,7 @@ function Navbar({navColor}) {
               </ul>
             </div>
             </>
-          }
+          
         </nav>
       </div>
     </div>
