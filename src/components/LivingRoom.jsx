@@ -1,50 +1,13 @@
 import PropTypes from 'prop-types'
-import Title from "./Title"
-import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Spinner from "./Spinner";
+import TitleOverlay from './TitleOverlay';
+import AreaDescription from './AreaDescription';
+import ProjectCarousel from './ProjectCarousel';
 
 function LivingRoom({data}) {
  
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    initialSlide: 0,
-    adaptiveHeight: true,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  }
 
   if(!data || data.length === 0) {
     return <Spinner />
@@ -56,18 +19,12 @@ function LivingRoom({data}) {
 
   return (
     <>
-      <div className="container">
-        <Title mainTitle={'Modern Interior Design'} subTitle={'living rooms'} />
-        <p className="text-secondary">{data.livingrooms} Living Room {data.livingrooms > 1 ? 'Designs' : 'Design'}</p>
+      <TitleOverlay mainTitle={'living rooms'} subTitle={'modern interior design'} bgImg={data.livingroomImgs[1]} />
 
-        <div className="living-room-photos">
-        <Slider {...settings}>
-          {data.livingroomImgs.map((item, index)=>(
-  
-              <img href={item} data-toggle="lightbox" data-gallery="img-gallery" key={index} src={item} alt="living room" />
-          ))}
-          </Slider>
-        </div>
+      <AreaDescription heading={['comfortable', 'welcoming', 'stylish']} description={'Our interior design living room is a stylish and inviting space that\'s designed to be the heart of your home. With its comfortable furnishings, thoughtful layout, and attention to detail, this living room is the perfect place to relax and entertain.'} />
+
+      <div className="area-carousel-container container">
+        <ProjectCarousel data={data} imgs={data.livingroomImgs} />
       </div>
     </>
   )

@@ -14,7 +14,7 @@ function ProjectCarousel({variant, data, imgs}) {
 
 
   return (
-    <Carousel indicators={false} interval={5000} nextLabel={''} prevLabel={''}>
+    <Carousel slide={false} indicators={false} interval={5000} nextLabel={''} prevLabel={''}>
 
       {imgs.map((item, index)=> (
         <Carousel.Item key={index}>
