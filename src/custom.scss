@@ -730,6 +730,10 @@ html {
   }
 
   #home {
+    .socials-overlay {
+      display: none!important;
+    }
+
     #carousel-component {
   
       .carousel-caption {

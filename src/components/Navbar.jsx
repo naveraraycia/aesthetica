@@ -16,8 +16,7 @@ function Navbar({navColor}) {
 
           {location.pathname === '/' ? (
             <>
-{/*             
-          <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              {/* <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
             {navColor === 'white' ? (
               <AiOutlineMenu color="#f5f5f5" />
             ) : 
@@ -29,19 +28,20 @@ function Navbar({navColor}) {
             <div id="navbarNav" className="justify-content-end">
               <ul className="navbar-nav flex-row">
                 <li className={"nav-item"}>
-                  <a href="#home" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Home</a>
+                  <a href="#living-rooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Living Room</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#about" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>About us</a>
+                  <a href="#kitchen" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Kitchen</a>
+  
                 </li>
                 <li className="nav-item">
-                  <a href="#projects" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Houses</a>
+                  <a href="#bedrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bedroom</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#team" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Team</a>
+                  <a href="#bathrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bathroom</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#contact" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Contact us</a>
+                  <a href="#housing-contact" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Contact us</a>
                 </li>
               </ul>
             </div>
