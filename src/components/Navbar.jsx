@@ -28,20 +28,20 @@ function Navbar({navColor}) {
             <div id="navbarNav" className="justify-content-end">
               <ul className="navbar-nav flex-row">
                 <li className={"nav-item"}>
-                  <a href="#living-rooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Living Room</a>
+                  <a href="#home" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Home</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#kitchen" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Kitchen</a>
+                  <a href="#about" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>About us</a>
   
                 </li>
                 <li className="nav-item">
-                  <a href="#bedrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bedroom</a>
+                  <a href="#projects" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Houses</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#bathrooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Bathroom</a>
+                  <a href="#team" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Team</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#housing-contact" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Contact us</a>
+                  <a href="#contact" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Contact us</a>
                 </li>
               </ul>
             </div>
