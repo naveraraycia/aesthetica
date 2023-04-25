@@ -530,6 +530,75 @@ html {
 
   //////////////////////////////////// HOUSE PAGES //////////////////////////////////////////
 
+  .title-header-container {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-position: center!important;
+    background-size: cover!important;
+  }
+
+  .title-container {
+    margin-top: 10rem;
+  }
+
+  .title-header-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.54);
+    @include font-scheme($krona, 400);
+    color: white;
+
+    h1 {
+      letter-spacing: 1rem;
+      font-size: 34px;
+    }
+
+    h6 {
+      margin-top: 1rem;
+      letter-spacing: 0.63rem;
+    }
+  }
+
+  .area-description-container {
+    margin-top: 5rem;
+    .heading-set {
+      @include font-scheme($krona, 400);
+      font-size: 20px;
+
+      span:nth-child(1), span:nth-child(2){
+        margin-right: 2rem;
+      } 
+    }
+
+    .area-description {
+      margin-top: 2rem;
+      margin-bottom: 5rem;
+
+      p {
+        text-align: center;
+        @include font-scheme($varela, 400);
+        max-width: 670px;
+        line-height: 2rem;
+
+      }
+    }
+  }
+
+  .area-carousel-container {
+    .carousel-item {
+      img {
+        height: 500px!important;
+        object-fit: cover!important;
+        object-position: center!important;
+      }
+    }
+  }
+
+
 // INDIVIDUAL HOUSE PROJECT PAGES //////////////////
 #house-landing {
 
@@ -682,94 +751,48 @@ html {
   }
 }
 //////////////////////////////////////////////////////
-#living-rooms {
-  .title-header-container {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    background-position: center!important;
-    background-size: cover!important;
-  }
 
-  .title-header-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.54);
-    @include font-scheme($krona, 400);
-    color: white;
-
-    h1 {
-      letter-spacing: 1rem;
-      font-size: 34px;
-    }
-
-    h6 {
-      margin-top: 1rem;
-      letter-spacing: 0.63rem;
-    }
-  }
-
-  .area-description-container {
-    margin-top: 5rem;
-    .heading-set {
-      @include font-scheme($krona, 400);
-      font-size: 20px;
-
-      span:nth-child(1), span:nth-child(2){
-        margin-right: 2rem;
-      } 
-    }
-
-    .area-description {
-      margin-top: 2rem;
-      margin-bottom: 5rem;
-
-      p {
-        text-align: center;
-        @include font-scheme($varela, 400);
-        max-width: 670px;
-        line-height: 2rem;
-
-      }
-    }
-  }
-
-  .area-carousel-container {
-    .carousel-item {
-      img {
-        height: 500px!important;
-        object-fit: cover!important;
-        object-position: center!important;
-      }
-    }
-  }
-}
 //////////////////////////////////////////////////////
 
 #kitchen {
   margin-bottom: 5rem;
-  #title {
-    h3, h1 {
-      text-align: right!important;
-    }
-  }
+  
+  .kitchen-grid{
+    margin-top: 10rem!important;
 
-  #kitchen-description {
-    h1 {
-      @include font-scheme($podkova, 400)
-    }
-    p {
-      @include font-scheme($varela, 400)
-    }
-  }
+    .kitchen-description{
+      padding: 2rem;
 
-  img {
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+      h3 {
+        @include font-scheme($podkova, 400);
+      }
+
+      p {
+        @include font-scheme($varela, 400);
+        margin-top: 2rem;
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 2rem;
+        text-align: left!important;
+        
+      }
+    }
+
+    .kitchen-photo2, .kitchen-photo1 {
+      width: 100%!important;
+      background-position: center!important;
+      background-size: cover!important;
+    }
+
+    .kitchen-photo2 {
+      height: 500px!important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .kitchen-photo1 {
+      height: 100%!important;
+    }
   }
 }
 
@@ -876,6 +899,16 @@ html {
     }
   }
 
+  .area-description-container .heading-set {
+    font-size: 11px;
+  }
+
+  .area-description {
+    p {
+      font-size: 14px;
+    }
+  }
+
   #house-details {
 
     .house-info {
@@ -945,36 +978,31 @@ html {
   }
 
   #kitchen {
-    .align-items-end {
-      align-items: center!important;
-    }
-    #title {
-      h3, h1 {
-        text-align: center!important;
+    .kitchen-grid {
+
+
+      .kitchen-photo2 {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      
+
+      .kitchen-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          text-align: center!important;
+        }
+      }
+
+      .kitchen-photo1 {
+        height: 300px!important;
+        margin-bottom: 15px;
       }
     }
-
-    #kitchen-description {
-      h1 {
-        font-size: 32px;
-        text-align: center;
-      }
-
-      p {
-        text-align: center;
-      }
-    }
-
-   #dining {
-      margin-left: 0px;
-      margin-right: 0px;
-
-      .col-md-8 {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    
-   } 
 }
 }
 
@@ -1021,7 +1049,6 @@ html {
 
     }
 
-
     .socials-overlay {
       height: 100px!important;
       width: 100%!important;
@@ -1037,8 +1064,6 @@ html {
           margin-left: 1rem;
         }
       }
-
-
 
       .container {
         justify-content: space-between;
@@ -1069,8 +1094,6 @@ html {
     }
   }
 
-
-
   #testimonial {
     .testimonial-details {
       display: flex;
@@ -1087,6 +1110,27 @@ html {
       .d-flex {
         text-align: center;
       }
+    }
+  }
+
+  .title-header-overlay {
+    h1 {
+      font-size: 20px;
+      letter-spacing: 0.3rem;
+    }
+
+    h6 {
+      font-size: 12px;
+      max-width: 350px;
+      text-align: center;
+      line-height: 1.5rem;
+    }
+  }
+
+  #kitchen {
+    .kitchen-photo2 {
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
 
@@ -1146,21 +1190,23 @@ html {
   }
 
 
-  #client-engagement {
-    min-height: 150px;
-    .dark-overlay {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      .col-4 {
-        h2 {
-          font-size: 24px;
-        }
 
-        h5 {
-          font-size: 14px;
-          text-align: center;
-        }
-      }
-    }
-  }
+
+  // #client-engagement {
+  //   min-height: 150px;
+  //   .dark-overlay {
+  //     padding-left: 1rem;
+  //     padding-right: 1rem;
+  //     .col-4 {
+  //       h2 {
+  //         font-size: 24px;
+  //       }
+
+  //       h5 {
+  //         font-size: 14px;
+  //         text-align: center;
+  //       }
+  //     }
+  //   }
+  // }
 }
