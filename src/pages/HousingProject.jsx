@@ -2,9 +2,8 @@ import Bedroom from "../components/Bedroom";
 import Bathroom from "../components/Bathroom";
 import LivingRoom from "../components/LivingRoom";
 import HouseHero from "../components/HouseHero";
-import ProjectCarousel from "../components/ProjectCarousel";
 import Kitchen from "../components/Kitchen";
-import ClientEngagementBanner from "../components/ClientEngagementBanner";
+import TitleOverlay from "../components/TitleOverlay";
 import Contact from "../components/Contact";
 import { useParams } from "react-router-dom";
 import {useState, useEffect} from 'react'
@@ -64,11 +63,7 @@ function HousingProject() {
         <Bathroom data={projectData} />
       </section>
 
-      <section id="client-engagement" style={{
-        backgroundImage: `url(${projectData.landingImgs[0]})`
-      }}>
-        <ClientEngagementBanner data={projectData} />
-      </section>
+      <TitleOverlay mainTitle={'contact us'} subTitle={'if interested'} bgImg={projectData.landingImgs[0]} />
 
       <section id="housing-contact" className="contact">
         <Contact />

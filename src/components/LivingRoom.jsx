@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types'
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
 import Spinner from "./Spinner";
 import TitleOverlay from './TitleOverlay';
 import AreaDescription from './AreaDescription';

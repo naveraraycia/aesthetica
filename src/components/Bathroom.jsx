@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
-import Title from "./Title"
-import ProjectCarousel from "./ProjectCarousel"
+import TitleOverlay from './TitleOverlay';
+import AreaDescription from './AreaDescription';
+import ProjectCarousel from './ProjectCarousel';
 import Spinner from "./Spinner"
 
 function Bathroom({data}) {
@@ -10,12 +11,12 @@ function Bathroom({data}) {
   
   return (
     <>
-      <div className="container d-flex flex-column">
-        <Title subTitle={'bathrooms'} mainTitle={'Bathe in Luxury'} />
+      <TitleOverlay mainTitle={'bathrooms'} subTitle={'bathe in luxury'} bgImg={data.bathroomImgs[1]} />
 
-        <div className="bathroom-carousel w-100">
-          <ProjectCarousel data={data} imgs={data.bathroomImgs} />
-        </div>
+      <AreaDescription heading={['sleek', 'modern', 'classic']} description={'From the sleek freestanding tub to the spacious walk-in shower, every element of the bathrooms has been thoughtfully designed to provide a truly indulgent experience.'} />
+
+      <div className="area-carousel-container container">
+        <ProjectCarousel data={data} imgs={data.bathroomImgs} />
       </div>
     </>
   )
