@@ -16,15 +16,6 @@ function Navbar({navColor}) {
 
           {location.pathname === '/' ? (
             <>
-              {/* <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            {navColor === 'white' ? (
-              <AiOutlineMenu color="#f5f5f5" />
-            ) : 
-            (
-              <AiOutlineMenu color="#000" />
-            )}
-            </button> */}
- 
             <div id="navbarNav" className="justify-content-end">
               <ul className="navbar-nav flex-row">
                 <li className={"nav-item"}>
@@ -48,17 +39,8 @@ function Navbar({navColor}) {
             </>
           ) : (
             <>
-              {/* <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            {navColor === 'white' ? (
-              <AiOutlineMenu color="#f5f5f5" />
-            ) : 
-            (
-              <AiOutlineMenu color="#000" />
-            )}
-            </button> */}
- 
-            <div id="navbarNav" className="collapse navbar-collapse justify-content-end">
-              <ul className="navbar-nav">
+            <div id="navbarNav" className="justify-content-end">
+              <ul className="navbar-nav flex-row">
                 <li className={"nav-item"}>
                   <a href="#living-rooms" className={`nav-link ${navColor === 'white' && 'white-nav-link'}`}>Living Room</a>
                 </li>

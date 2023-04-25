@@ -1,7 +1,7 @@
 import Bedroom from "../components/Bedroom";
 import Bathroom from "../components/Bathroom";
 import LivingRoom from "../components/LivingRoom";
-import Navbar from "../components/Navbar"
+import HouseHero from "../components/HouseHero";
 import ProjectCarousel from "../components/ProjectCarousel";
 import Kitchen from "../components/Kitchen";
 import ClientEngagementBanner from "../components/ClientEngagementBanner";
@@ -15,7 +15,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'
 
 function HousingProject() {
-  document.body.style.backgroundColor = '#172024';
+  document.body.style.backgroundColor = '#0F0F0F';
   const [projectData, setProjectData] = useState({})
   const params = useParams()
 
@@ -30,7 +30,7 @@ function HousingProject() {
   useEffect(()=>{
     AOS.init({
       offset: 200,
-      once: false
+      once: true
     })
   },[])
 
@@ -41,13 +41,10 @@ function HousingProject() {
   return (
     <>
       <section id="house-landing">
-        <Navbar navColor={'white'} />
-        <div className="container">
-            <ProjectCarousel data={projectData} imgs={projectData.landingImgs} variant={'with-caption'} /> 
-        </div>
+       <HouseHero inquired={projectData.inquired} rating={projectData.rating} chosen={projectData.chosen} designTitle={projectData.name} heroImgs={projectData.landingImgs} />
       </section>
 
-      <section id="house-details" className="d-flex d-lg-none">
+      <section id="house-details" className="">
         <HouseDetails data={projectData} />
       </section>
 

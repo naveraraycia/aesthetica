@@ -89,7 +89,7 @@ html {
   }
 }
 
-#navbar {
+#navbar {  /////////////////////////////////////////////////////////////////////////
   z-index: 55;
   position: absolute;
   bottom: 30px;
@@ -112,65 +112,7 @@ html {
   }
 }
 
-// #navbar {
-//   z-index: 55;
-//   position: absolute;
-//   bottom: 30px;
-
-//   .navbar {
-//     // border-bottom: 1px solid rgba(0,0,0,0.12);
-//   }
-
-//   .no-border {
-//     border-bottom: none!important;
-//   }
-
-//   .nav-selected, .navbar-brand {
-//     @include font-scheme($krona, 400);
-//     color: #fff!important;
-//   }
-
-//   .white-navbar-brand {
-//     color: #f5f5f5!important;
-//   }
-
-//   .nav-link {
-//     @include font-scheme($krona, 400);
-//     color: rgba(255,255,255,0.5);
-//     font-size: 12px!important;
-//     margin-right: 1rem;
-//   } 
-
-//   .white-nav-link {
-//     color: rgba(245,245,245,0.5)!important;
-//   } 
-
-//   .nav-link:hover {
-//     cursor: pointer!important;
-//     color: #fff!important;
-//   }
-
-//   .white-nav-link:hover {
-//     color: #f5f5f5!important;
-//   } 
-// }
-
-
-#home {
-  background: url('./assets/img/landing-page-img.jpg');
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
-  position: relative;
-
-  .collapse-navigation {
-    display: none;
-
-    ul {
-      display: none!important;
-    }
-  }
-
+ /////////////////////////////////////////////////////////////////////////
   .socials-overlay {
     height: 100%;
     width: 100px;
@@ -208,6 +150,61 @@ html {
       }
     }
   }
+
+  //////////////////////////////////// HOME PAGE //////////////////////////////////////////
+
+#home {
+  background: url('./assets/img/landing-page-img.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+
+  .collapse-navigation {
+    display: none;
+
+    ul {
+      display: none!important;
+    }
+  }
+
+  // .socials-overlay {
+  //   height: 100%;
+  //   width: 100px;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   background-color: rgba(0,0,0,0.50);
+  //   z-index: 50;
+
+  //   .container {
+  //     height: 100%;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     padding-bottom: 40px;
+  //     justify-content: end;
+
+  //     div{
+  //       display: flex;
+  //       flex-direction: column;
+  //     }
+
+  //     .menu-icon {
+  //       display: none;
+  //     }
+  //   }
+
+  //   a {
+  //     margin-top: 1rem;
+  //   }
+
+  //   a:hover{
+  //     svg{
+  //       color: white!important
+  //     }
+  //   }
+  // }
 
   .hero-overlay{
     height: 100%;
@@ -469,45 +466,7 @@ html {
   }
 }
 
-// Explore ////////////
-// #explore {
-//   background-color: $lightGray;
-//   .explore-aesthetica {
-//     position: relative;
-//     background-image: url('./assets/img/exploreImg.jpg');
-//     background-position: center;
-//     background-size: cover;
-//     min-height: 300px;
-
-//     .dark-overlay {
-//       position: absolute;
-//       background-color: rgba(0,0,0,0.55);
-//       top: 0;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-
-//       h1, h3 {
-//         @include font-scheme($varela, 400)
-//       }
-
-//       h1 {
-//         font-size: 54px;
-//       }
-
-//       h3 {
-//         max-width: 700px;
-//         line-height: 141.8%;
-//         font-size: 20px;
-//       }
-
-     
-//     }
-//   }
-
-// }
-
-// Contact ////////////
+// GET IN TOUCH ////////////
 #getInTouch {
     .col-md-7{
 
@@ -537,8 +496,6 @@ html {
       }
     }
   
-
-
       .col-md-5{
 
         padding: 6rem 3rem 6rem 3rem;
@@ -609,38 +566,177 @@ html {
   }
 }
 
+  //////////////////////////////////// HOUSE PAGES //////////////////////////////////////////
 
 // INDIVIDUAL HOUSE PROJECT PAGES //////////////////
 #house-landing {
-  img {
-    object-fit: cover;
-    object-position: center;
-    height: 550px!important;
-   }
+  // background-position: center!important;
+  // background-size: cover!important;
+  min-height: 100vh;
+  position: relative;
 
-   .carousel-caption {
-    background-color: rgba(0,0,0,0.52)!important;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1.5rem 1rem 1.5rem;
-    text-align: left!important;
+  .hero-container {
+    height: 100vh;
+    width: 100%;
 
-    h4 {
-      @include font-scheme($krona, 400);
-      font-size: 12px;
-      max-width: 100px;
-      line-height: 150%;
+    .sub-photos{
+      position: absolute;
+      display: flex;
+      z-index: 150;
+      right: 40px;
+      bottom: 80px;
+
+      img {
+        height: 200px;
+        width: 340px;
+        margin-right: 2rem;
+        object-fit: cover;
+      }
+
     }
-    
-    h5 {
-      @include font-scheme($varela, 400);
-      font-size: 16px;
+  }
+
+  .house-hero-landing{
+    .col-lg-8 {
+      background-position: center!important;
+      background-size: cover!important;
+      position: relative;
+      
+      .hero-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.54);
+        display: flex;
+        justify-content: center;
+        padding-top: 10rem;
+
+        h1 {
+          @include font-scheme($varela, 400);
+          color: white;
+          max-width: 300px;
+          line-height: 4rem;
+          font-size: 45px;
+          letter-spacing: 0.24rem;
+
+          span {
+            font-size: 54px;
+          }
+        }
+      }
     }
 
-   }
+    .col-lg-4 {
+      display: flex;
+      flex-direction: column;
+      padding: 5rem;
+
+      .client-interactions {
+        @include font-scheme($krona, 400);
+        color: white;
+        margin-bottom: 2rem;
+
+        h6 {
+          font-size: 11px;
+          max-width: 180px;
+          line-height: 1.4rem;
+        }
+
+      }
+    }
+    height: 100%!important;
+    width: 100%!important;
+  }
+
+  .socials-overlay {
+    .container {
+      justify-content: space-between;
+    }
+    .branding {
+      a {
+        transform: rotate(90deg);
+        @include font-scheme($krona, 400);
+        color: white;
+        font-size: 20px;
+        margin-top: 8rem;
+
+      }
+      a:hover{
+        text-decoration: none;
+      }
+    }
+  }
 }
 
+
+// #house-landing {
+//   img {
+//     object-fit: cover;
+//     object-position: center;
+//     height: 550px!important;
+//    }
+
+//    .carousel-caption {
+//     background-color: rgba(0,0,0,0.52)!important;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 1rem 1.5rem 1rem 1.5rem;
+//     text-align: left!important;
+
+//     h4 {
+//       @include font-scheme($krona, 400);
+//       font-size: 12px;
+//       max-width: 100px;
+//       line-height: 150%;
+//     }
+    
+//     h5 {
+//       @include font-scheme($varela, 400);
+//       font-size: 16px;
+//     }
+
+//    }
+// }
+
 #house-details {
+
+  #navbar {  /////////////////////////////////////////////////////////////////////////
+  z-index: 55;
+  position: relative;
+  bottom: 0px;
+
+  .nav-selected, .navbar-brand {
+    @include font-scheme($krona, 400);
+    color: #fff!important;
+  }
+
+  .nav-link {
+    @include font-scheme($krona, 400);
+    color: rgba(255,255,255,0.5);
+    font-size: 12px!important;
+    margin-right: 2rem;
+  } 
+
+  .nav-link:hover {
+    cursor: pointer!important;
+    color: #fff!important;
+  }
+}
+
+.house-info-row {
+  background-color: black;
+}
+
+.house-info-container {
+  display: flex;
+  justify-content: center;
+
+  .house-info:nth-child(1), .house-info:nth-child(2){
+    margin-right: 3rem;
+  }
+}
   p {
     @include font-scheme($varela, 400);
     margin-bottom: 0px;
@@ -802,6 +898,15 @@ html {
     }
   }
 
+  #house-details {
+
+    .house-info {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
   #about {
     #about-paragraph {
       .align-self-end {
@@ -904,7 +1009,7 @@ html {
     }
   }
 
-  #home {
+  #home, #house-landing, #house-details {
 
     .collapse-navigation {
       display: flex;
@@ -986,6 +1091,8 @@ html {
     }
   }
 
+
+
   #testimonial {
     .testimonial-details {
       display: flex;
@@ -1006,6 +1113,40 @@ html {
   }
 
   #house-landing {
+    .sub-photos{
+      display: none!important;
+    }
+
+    .house-hero-landing{
+      .hero-overlay{
+        padding-top: 0px!important;
+        align-items: center;
+
+        h1 {
+          text-align: center;
+
+          span{
+            font-size: 36px!important;
+          }
+        }
+      }
+
+      .col-lg-4 {
+        display: none;
+      }
+    }
+
+    .socials-overlay{
+      .container {
+        justify-content: space-between;
+      }
+
+      .branding{
+        display: none!important;
+      }
+    }
+
+
     img {
       object-fit: cover;
       object-position: center;
@@ -1013,6 +1154,16 @@ html {
      }
     .carousel-caption {
       display: none;
+    }
+  }
+
+   #house-details {
+    .nav-container {
+      margin-top: 0px!important;
+    }
+
+    .house-info-row {
+      margin-top: 0px!important;
     }
   }
 
