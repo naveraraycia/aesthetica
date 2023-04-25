@@ -26,7 +26,7 @@ function Testimonial() {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-6 testimonial-details">
             <Title subTitle={'testimonial'} mainTitle={'Client Reviews'} />
             <p className="testimonial-description" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras.</p>
             <div className="d-flex mt-2" id="client-reviews">
