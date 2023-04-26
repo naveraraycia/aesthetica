@@ -1,19 +1,10 @@
-import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import AOS from 'aos';
 import 'aos/dist/aos.css'
 import ContactForm from "./ContactForm"
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram } from "react-icons/ai";
 
 function Contact() {
   const location = useLocation()
-
-  useEffect(()=>{
-    AOS.init({
-      offset: 200,
-      once: true
-    })
-  },[])
   return (
     <>
       <div className="container">

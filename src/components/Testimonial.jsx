@@ -1,7 +1,5 @@
 import Title from "./Title"
 import Card from "./Card"
-import { GiDiamondTrophy } from "react-icons/gi"
-import { BsFillEmojiSmileFill } from "react-icons/bs"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

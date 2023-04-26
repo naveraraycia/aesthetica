@@ -6,9 +6,17 @@ import Testimonial from '../components/Testimonial'
 import GetInTouch from '../components/GetInTouch'
 import Contact from '../components/Contact'
 import Hero from '../components/Hero'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 function Home() {
   document.body.style.backgroundColor = '#0F0F0F';
+  useEffect(()=>{
+    AOS.init({
+      once: true
+    })
+  },[])
   return (
     <>
       <section id='home'>

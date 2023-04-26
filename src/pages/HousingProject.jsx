@@ -28,7 +28,6 @@ function HousingProject() {
 
   useEffect(()=>{
     AOS.init({
-      offset: 200,
       once: true
     })
   },[])

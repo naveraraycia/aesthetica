@@ -1,17 +1,8 @@
-import { useEffect } from 'react';
 import about1 from '../assets/img/aboutImg1.jpg'
 import about2 from '../assets/img/aboutImg2.jpg'
 import Title from './Title'
-import AOS from 'aos';
-import 'aos/dist/aos.css'
 
 function About() {
-  useEffect(()=>{
-    AOS.init({
-      // offset: 200,
-      once: false
-    })
-  },[])
   return (
    <>
     <div className="container">
