@@ -12,7 +12,6 @@ function Team() {
    <>
   <div className="container">
     <Title subTitle={'our team'} mainTitle={'Meet our Team of Experts'} />
-
     <div className="row">
       <div className="col-md-3" data-aos="fade-right" data-aos-delay="250" data-aos-duration="700">
         <TeamMember img={img1} name={'James Stevenson'} position={'architect'} />

@@ -1,12 +1,9 @@
-// Add PropTypes
-
+import PropTypes from 'prop-types'
 import { useState } from "react";
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiOutlineMenu } from "react-icons/ai";
 
 function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
   const [openNav, setOpenNav] = useState(false)
-  
-  // split project name
   const nameArr = designTitle.split(' ')
 
   return (
@@ -38,14 +35,12 @@ function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
         <img src={heroImgs[1]} alt="house 2" />
         <img src={heroImgs[2]} alt="house 3" />
       </div>
-
       <div className="row house-hero-landing">
         <div className="col-lg-8" style={{background: `url(${heroImgs[0]})`}}>
           <div className="hero-overlay">
             <h1>{nameArr[0]} <span className="text-lowercase">{nameArr[1]}</span></h1>
           </div>
         </div>
-
         <div className="col-lg-4">
           <div>
             <div className="client-interactions">
@@ -61,7 +56,6 @@ function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
               <h6>Clients chose this design</h6>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -89,6 +83,22 @@ function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
     </div>
     </>
   )
+}
+
+HouseHero.defaultProps = {
+  designTitle: 'Design Title',
+  heroImgs: [],
+  chosen: 0,
+  inquired: 0,
+  rating: 0
+}
+
+HouseHero.propTypes = {
+  designTitle: PropTypes.string.isRequired,
+  heroImgs: PropTypes.array.isRequired,
+  chosen: PropTypes.number.isRequired,
+  inquired: PropTypes.number.isRequired,
+  rating: PropTypes.number.isRequired
 }
 
 export default HouseHero

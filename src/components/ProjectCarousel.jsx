@@ -15,7 +15,6 @@ function ProjectCarousel({variant, data, imgs}) {
 
   return (
     <Carousel slide={false} indicators={false} interval={5000} nextLabel={''} prevLabel={''}>
-
       {imgs.map((item, index)=> (
         <Carousel.Item key={index}>
           <a href={item} data-toggle="lightbox" data-gallery="img-gallery">
@@ -40,7 +39,6 @@ function ProjectCarousel({variant, data, imgs}) {
         )}
       </Carousel.Item>
       ))}
-     
     </Carousel>
   )
 }

@@ -12,9 +12,7 @@ function Bedroom({data}) {
   return (
     <>
       <TitleOverlay mainTitle={'bedrooms'} subTitle={'comfortable & cozy'} bgImg={data.bedroomImgs[1]} />
-
       <AreaDescription heading={['minimalist', 'dreamy', 'warm']} description={'Our interior design bedroom is a serene and inviting space that\'s designed to help you relax and unwind. With its thoughtful layout, comfortable furnishings, and soothing color scheme, this bedroom is the perfect retreat after a long day.'} />
-
       <div className="area-carousel-container container">
         <ProjectCarousel data={data} imgs={data.bedroomImgs} />
       </div>

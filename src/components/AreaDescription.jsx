@@ -1,4 +1,4 @@
-// Add prop Types
+import PropTypes from 'prop-types'
 
 function AreaDescription({heading, description}) {
   return (
@@ -8,12 +8,23 @@ function AreaDescription({heading, description}) {
         <span className="text-white text-uppercase">{heading[1]}</span>
         <span className="text-primary text-uppercase">{heading[2]}</span>
       </div>
-
       <div className="area-description">
         <p className="text-white">{description}</p>
       </div>
     </div>
   )
 }
+
+AreaDescription.defaultProps = {
+  heading: ['comfortable', 'welcoming', 'stylish'],
+  description: 'Room Description'
+}
+
+AreaDescription.propTypes = {
+  heading: PropTypes.array.isRequired,
+  description: PropTypes.string.isRequired
+}
+
+
 
 export default AreaDescription

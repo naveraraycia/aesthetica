@@ -12,9 +12,7 @@ function Bathroom({data}) {
   return (
     <>
       <TitleOverlay mainTitle={'bathrooms'} subTitle={'bathe in luxury'} bgImg={data.bathroomImgs[1]} />
-
       <AreaDescription heading={['sleek', 'modern', 'classic']} description={'From the sleek freestanding tub to the spacious walk-in shower, every element of the bathrooms has been thoughtfully designed to provide a truly indulgent experience.'} />
-
       <div className="area-carousel-container container">
         <ProjectCarousel data={data} imgs={data.bathroomImgs} />
       </div>

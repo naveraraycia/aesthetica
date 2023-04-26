@@ -15,7 +15,6 @@ function Project({bgImg, name, number, redirect}) {
         <h2 className='text-primary'>{number}</h2>
         </div>
       </a>
-
     </div>
   )
 }
@@ -23,7 +22,7 @@ function Project({bgImg, name, number, redirect}) {
 Project.defaultProps = {
   bgImg: '',
   name: 'Name',
-  number: '',
+  number: 1,
   redirect: ''
 }
 

@@ -21,16 +21,12 @@ function Kitchen({data}) {
       <div className="container">
         <div className="row">
           <div className="col-md-6 mb-4 mb-md-0 text-white">
-
             <div className="kitchen-description">
               <h3>Aesthetically Designed</h3>
               <p>From the cozy dining area and spacious kitchen to the carefully chosen finishes and fixtures, every element of this space has been carefully curated to create a warm and inviting ambiance</p>
-            </div>
-           
-            <img src={data.kitchenImgs[1]} alt="kitchen-1" className='w-100' />
-           
-          </div>
-          
+            </div>   
+            <img src={data.kitchenImgs[1]} alt="kitchen-1" className='w-100' />     
+          </div>    
           <div className="col-md-6">
             <img src={data.kitchenImgs[0]} alt="kitchen-1" className='w-100 h-100' />
         </div>

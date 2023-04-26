@@ -1,4 +1,4 @@
-// Add propTypes
+import PropTypes from 'prop-types'
 
 function TitleOverlay({bgImg, mainTitle, subTitle}) {
   return (
@@ -9,6 +9,18 @@ function TitleOverlay({bgImg, mainTitle, subTitle}) {
       </div>
     </div>
   )
+}
+
+TitleOverlay.defaultProps = {
+  bgImg: '',
+  mainTitle: 'Main Title',
+  subTitle: "Sub Title"
+}
+
+TitleOverlay.propTypes = {
+  bgImg: PropTypes.string.isRequired,
+  mainTitle: PropTypes.string.isRequired,
+  subTitle: PropTypes.string.isRequired
 }
 
 export default TitleOverlay

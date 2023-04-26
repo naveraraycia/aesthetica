@@ -9,7 +9,6 @@ function Navbar() {
     <div id="navbar">
       <div className="container mt-3">
         <nav className='navbar d-flex flex-row mb-3' id="main-nav">
-
             <>
             <div id="navbarNav" className="justify-content-end">
               <ul className="navbar-nav flex-row">

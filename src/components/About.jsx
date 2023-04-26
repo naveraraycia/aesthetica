@@ -17,19 +17,14 @@ function About() {
             </div>
           </div>
         </div>
-
         <div className="col-md-6 d-flex flex-column" id='about-paragraph'>
           <div className="align-self-end mt-5">
             <Title subTitle={'who we are'} mainTitle={'Architectural blurb'} />
-
             <div>
               <p className='text-white' data-aos="fade-up" data-aos-delay="200" data-aos-duration="500"><span className='text-primary'>Aesthetica</span> is a group of outstanding architects and engineers that specialize in modern home designs to suit the clients’ lifestyle needs.</p>
-
               <p className='text-white' data-aos="fade-up" data-aos-delay="350" data-aos-duration="500">We specialize in minimalist yet modern house designs that focus on quality and detail. Think clean lines and expert craftsmanship - a home you'll be proud of for years to come.</p>
             </div>
-
-          </div>
-            
+          </div>       
         </div>
       </div>
     </div>

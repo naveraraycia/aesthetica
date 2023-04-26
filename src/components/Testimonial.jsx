@@ -45,21 +45,18 @@ function Testimonial() {
             <Card variant={'comment-card'}>
               <div className="d-flex">
                 <img src={img1} alt="Avatar" className="rounded-circle" />
-
                 <div className="d-flex flex-column ml-4">
                   <h3 className="text-white text-capitalize mb-3 mt-2">Soojin Kang</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
                   <p className="text-white">01/25/20</p>
                 </div>
               </div>
-
               <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augu. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum, rerum ipsa eaque soluta facere.</p>
             </Card>
 
             <Card variant={'comment-card'}>
             <div className="d-flex">
                 <img src={img2} alt="Avatar" className="rounded-circle" />
-
                 <div className="d-flex flex-column ml-4">
                   <h3 className="text-white text-capitalize mb-3 mt-2">Stephen Blake</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
@@ -73,7 +70,6 @@ function Testimonial() {
             <Card variant={'comment-card'}>
             <div className="d-flex">
                 <img src={img3} alt="Avatar" className="rounded-circle" />
-
                 <div className="d-flex flex-column ml-4">
                   <h3 className="text-white text-capitalize mb-3 mt-2">Isabela Smith</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
@@ -87,17 +83,14 @@ function Testimonial() {
             <Card variant={'comment-card'}>
             <div className="d-flex">
                 <img src={img4} alt="Avatar" className="rounded-circle" />
-
                 <div className="d-flex flex-column ml-4">
                   <h3 className="text-white text-capitalize mb-3 mt-2">Millie Evans</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
                   <p className="text-white">08/17/19</p>
                 </div>
               </div>
-
               <p id="comment" className="text-lighterGray">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augu. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum, rerum ipsa eaque soluta facere.</p>
             </Card>
-
           </Slider>
           </div>
         </div>

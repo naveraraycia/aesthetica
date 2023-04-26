@@ -17,12 +17,10 @@ function GetInTouch() {
         <div className="d-flex flex-column align-items-center justify-content-center">
           <div>
             <Title subTitle="get in touch" mainTitle="With our experienced team" />
-
             <div className="description">
               <p data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Contacting our firm is easy, and we are always happy to answer any questions you may have about our services.</p>
               <p data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">So why wait? Contact us today to learn more about how we can help you achieve your construction and design goals.</p>
             </div>
-
           </div>
         </div>  
       </div>

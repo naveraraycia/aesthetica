@@ -39,26 +39,20 @@ function Hero() {
 
     <div className="socials-overlay">
       <div className="container">
-
         <div>
           <a href="https://www.facebook.com/" target={'_blank'} rel="noreferrer">
             <AiFillFacebook color="#838383" size={25} />
           </a>
-
           <a href="https://www.instagram.com/" target={'_blank'} rel="noreferrer">
           <AiFillInstagram color="#838383" size={25} />
           </a>
-
           <a href="https://twitter.com/" target={'_blank'} rel="noreferrer">
           <AiFillTwitterSquare color="#838383" size={25} />
           </a>
         </div>
-
         <div className="menu-icon" onClick={() => setOpenNav(prevState => !prevState)}>
           <AiOutlineMenu color="#838383" size={25} />
         </div>
-
-
       </div>
     </div>
     </>
