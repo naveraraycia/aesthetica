@@ -13,7 +13,7 @@ function GetInTouch() {
           <div className="col-6 p4"></div>
         </div>
       </div>
-      <div className="col-md-5 get-in-touch bg-darkGray" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
+      <div className="col-md-5 get-in-touch bg-secondary" data-aos="fade-left" data-aos-delay="150" data-aos-duration="800">
         <div className="d-flex flex-column align-items-center justify-content-center">
           <div>
             <Title subTitle="get in touch" mainTitle="With our experienced team" />

@@ -11,7 +11,7 @@ function Project({bgImg, name, number, redirect}) {
       <a href={`/project/${redirect}/${number}`}>
         <div className="dark-overlay d-flex flex-column justify-content-between">
         <h4 className='text-primary text-uppercase'>{name}</h4>
-        <h5 className='text-uppercase text-secondary align-self-center'>view</h5>
+        <h5 className='text-uppercase text-white align-self-center'>view</h5>
         <h2 className='text-primary'>{number}</h2>
         </div>
       </a>

@@ -29,14 +29,14 @@ function Testimonial() {
             <p className="testimonial-description" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">Lorem ipsum dolor sit amet consectetur. Quam vulputate risus vivamus dui nam neque augue. Fames cras.</p>
             <div className="d-flex mt-2" id="client-reviews">
               <div className="d-flex flex-column mr-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">
-                <div className="text-secondary mt-4">
+                <div className="text-white mt-4">
                   <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="550">5</h2>
-                  <h5 className="text-secondary" data-aos="fade-up" data-aos-delay="400" data-aos-duration="550">Years Experience</h5>
+                  <h5 className="text-white" data-aos="fade-up" data-aos-delay="400" data-aos-duration="550">Years Experience</h5>
                 </div>
               </div>
               <div className="d-flex flex-column" data-aos="fade-up" data-aos-delay="200" data-aos-duration="550">
-                  <h2 className="text-secondary mt-4"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="550">75</h2>
-                  <h5 className="text-secondary"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="550">Satisfied Customers</h5>
+                  <h2 className="text-white mt-4"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="550">75</h2>
+                  <h5 className="text-white"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="550">Satisfied Customers</h5>
               </div>
             </div>
           </div>
@@ -47,9 +47,9 @@ function Testimonial() {
                 <img src={img1} alt="Avatar" className="rounded-circle" />
 
                 <div className="d-flex flex-column ml-4">
-                  <h3 className="text-secondary text-capitalize mb-3 mt-2">Soojin Kang</h3>
+                  <h3 className="text-white text-capitalize mb-3 mt-2">Soojin Kang</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
-                  <p className="text-secondary">01/25/20</p>
+                  <p className="text-white">01/25/20</p>
                 </div>
               </div>
 
@@ -61,9 +61,9 @@ function Testimonial() {
                 <img src={img2} alt="Avatar" className="rounded-circle" />
 
                 <div className="d-flex flex-column ml-4">
-                  <h3 className="text-secondary text-capitalize mb-3 mt-2">Stephen Blake</h3>
+                  <h3 className="text-white text-capitalize mb-3 mt-2">Stephen Blake</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
-                  <p className="text-secondary">03/23/20</p>
+                  <p className="text-white">03/23/20</p>
                 </div>
               </div>
 
@@ -75,9 +75,9 @@ function Testimonial() {
                 <img src={img3} alt="Avatar" className="rounded-circle" />
 
                 <div className="d-flex flex-column ml-4">
-                  <h3 className="text-secondary text-capitalize mb-3 mt-2">Isabela Smith</h3>
+                  <h3 className="text-white text-capitalize mb-3 mt-2">Isabela Smith</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
-                  <p className="text-secondary">02/16/18</p>
+                  <p className="text-white">02/16/18</p>
                 </div>
               </div>
 
@@ -89,9 +89,9 @@ function Testimonial() {
                 <img src={img4} alt="Avatar" className="rounded-circle" />
 
                 <div className="d-flex flex-column ml-4">
-                  <h3 className="text-secondary text-capitalize mb-3 mt-2">Millie Evans</h3>
+                  <h3 className="text-white text-capitalize mb-3 mt-2">Millie Evans</h3>
                   <h5 className="text-primary mb-2">Project started</h5>
-                  <p className="text-secondary">08/17/19</p>
+                  <p className="text-white">08/17/19</p>
                 </div>
               </div>
 

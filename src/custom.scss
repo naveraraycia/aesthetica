@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Podkova:wght@400;700&family=Varela&display=swap');
 
 
-$lightGray: #2C383D;
-$darkGray: #172024;
-
 // Input
 $input-focus-border-color: transparent;
 $input-focus-color: #F5F5F5;
@@ -18,30 +15,25 @@ $input-padding-y: 1rem;
 $input-padding-x: 1rem;
 
 $theme-colors: (
-  "gray": #0F0F0F,
-  "darkGray": #042031,
-  "darkerGray": #1F2A2F,
-  "darkestGray": #0A0F11,
-  "lightGray": #1F1F1F,
-  "lighterGray": #ACACAC,
-  "slate": #4CB3F3,
-  "darkSlate": #6C8493,
   "primary": #4CB3F3,
-  "secondary": #F5F5F5
-  );
+  "secondary": #042031,
+  "gray": #0F0F0F,
+  "lightGray": #1F1F1F,
+  "lighterGray": #ACACAC
+);
   
-  // Fonts
-  $krona: 'Krona One', sans-serif;
-  $podkova: 'Podkova', serif;
-  $varela: 'Varela', sans-serif;
+// Fonts
+$krona: 'Krona One', sans-serif;
+$podkova: 'Podkova', serif;
+$varela: 'Varela', sans-serif;
 
-  // input
-  $input-font-family: $varela;
+// input
+$input-font-family: $varela;
   
-  @mixin font-scheme($font, $weight){
-    font-family: $font;
-    font-weight: $weight;
-  }
+@mixin font-scheme($font, $weight){
+  font-family: $font;
+  font-weight: $weight;
+}
   
 @mixin card-scheme($bgColor, $text){
   background-color: $bgColor;
@@ -55,7 +47,7 @@ html {
   overflow-x: hidden
 }
 
-// Component styles
+// Component styles /////////////////////////////////////////////////////////////
 #title {
  
   h3 {
@@ -182,51 +174,6 @@ html {
 
   }
 
-
-  #carousel-component {
-    position: relative;
-
-    .carousel-caption {
-      bottom: 13.25rem!important;
-      // left: 8%!important;
-      text-align: left!important;
-
-      #secondImg {
-        h3, h2, p {
-          text-align: right!important;
-        }
-
-        p {
-          align-self: flex-end!important;
-        }
-      }
-
-      h3 {
-        @include font-scheme($krona,400);
-        color: #000;
-      }
-      
-      h2 {
-        @include font-scheme($podkova,400);
-        color: #000;
-        font-size: 50px;
-      }
-
-      p {
-        @include font-scheme($varela,400);
-        color: #000;
-        line-height: 179%;
-        max-width: 550px;
-        
-      }
-
-    }
-   img {
-    object-fit: cover;
-    object-position: center;
-    height: 600px!important;
-   }
-  }
 }
 
 // ////////////// About 
@@ -248,8 +195,6 @@ html {
   }
 
   #about-paragraph {
-   
-
     p {
       @include font-scheme($varela, 400);
       line-height: 179%;
@@ -431,7 +376,6 @@ html {
 // GET IN TOUCH ////////////
 #getInTouch {
     .col-md-7{
-
       .row {
         height: 100%;
 
@@ -442,8 +386,6 @@ html {
           width: 100%;
         }
       }
-
-
       .p1 {
         background: url('./assets/img/git-pic1.webp');
       }
@@ -458,19 +400,14 @@ html {
       }
     }
   
-      .col-md-5{
-
-        padding: 6rem 3rem 6rem 3rem;
-        
-  
-        p {
-          color: white;
-          @include font-scheme($varela, 400);
-          font-size: 14px;
-  
-        }
+    .col-md-5{
+      padding: 6rem 3rem 6rem 3rem;
+      p {
+        color: white;
+        @include font-scheme($varela, 400);
+        font-size: 14px;
       }
-    
+    }   
   }
 
 
@@ -528,8 +465,6 @@ html {
   }
 }
 
-  //////////////////////////////////// HOUSE PAGES //////////////////////////////////////////
-  
   .title-header-container {
     position: relative;
     height: 500px;
@@ -601,7 +536,6 @@ html {
 
 // INDIVIDUAL HOUSE PROJECT PAGES //////////////////
 #house-landing {
-
   min-height: 100vh;
   position: relative;
 
@@ -706,7 +640,7 @@ html {
 
 #house-details {
 
-  #navbar {  /////////////////////////////////////////////////////////////////////////
+  #navbar {
   z-index: 55;
   position: relative;
   bottom: 0px;
@@ -741,19 +675,7 @@ html {
     margin-right: 3rem;
   }
 }
-  // p {
-  //   @include font-scheme($varela, 400);
-  //   margin-bottom: 0px;
-  //   color: #f5f5f5
-  // }
-
-  // p:nth-child(1){
-  //   @include font-scheme($krona, 400);
-  //   max-width: 100px;
-  //   font-size: 12px;
-  // }
 }
-//////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////
 
@@ -795,10 +717,6 @@ html {
 
 
 // Media Query
-@media (max-width: 576px) {
-
-}
-
 @media (max-width: 768px) {
   #title {
       h3, h1 {
@@ -823,30 +741,6 @@ html {
     display: none!important;
   }
 
-  #home {
-
-    #carousel-component {
-  
-      .carousel-caption {
-        bottom: 10.25rem!important;
-        text-align: center!important;
-
-        h2 {
-          font-size: 38px;
-        }
-
-        #secondImg {
-          h3, h2, p {
-            text-align: center!important;
-          }
-  
-          p {
-            align-self: center!important;
-          }
-        }
-      }
-    }
-  }
 
   .area-description-container .heading-set {
     font-size: 11px;
@@ -859,7 +753,6 @@ html {
   }
 
   #house-details {
-
     .house-info {
       p {
         font-size: 12px;
@@ -952,7 +845,6 @@ html {
   }
 
   #home, #house-landing, #house-details {
-
     .collapse-navigation {
       display: flex;
       position: absolute;
@@ -982,7 +874,6 @@ html {
           color: #fff!important;
         }
       }
-
     }
 
     .socials-overlay {
@@ -995,7 +886,6 @@ html {
 
       a {
         margin-top: 0px!important;
-
         svg {
           margin-left: 1rem;
         }
@@ -1011,11 +901,9 @@ html {
         div{
           flex-direction: row!important;
         }
-
         .menu-icon {
           display: flex;
         }
-
         .menu-icon:hover{
           cursor: pointer;
           svg{
@@ -1117,5 +1005,4 @@ html {
       margin-top: 0px!important;
     }
   }
-
 }

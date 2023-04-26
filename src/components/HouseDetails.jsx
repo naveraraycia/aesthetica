@@ -15,17 +15,17 @@ function HouseDetails({data}) {
     
               <div className="house-info d-flex flex-column justify-content-center align-items-center">
               <GiBed color="#f5f5f5" size={30} />
-                  <p className="text-secondary text-uppercase mt-2">{data.bedrooms} bedrooms</p>
+                  <p className="text-white text-uppercase mt-2">{data.bedrooms} bedrooms</p>
               </div>
 
               <div className="house-info d-flex flex-column justify-content-center align-items-center">
               <GiBathtub color="#f5f5f5" size={30} />
-                  <p className="text-secondary text-uppercase mt-2">{data.bathrooms} bathrooms</p>
+                  <p className="text-white text-uppercase mt-2">{data.bathrooms} bathrooms</p>
               </div>
 
               <div className="house-info d-flex flex-column justify-content-center align-items-center">
               <BsHouseDoor color="#f5f5f5" size={30} />
-                  <p className="text-secondary text-uppercase mt-2">{data.stories} stories</p>
+                  <p className="text-white text-uppercase mt-2">{data.stories} stories</p>
               </div>
           </div>
         </div>
