@@ -1,10 +1,13 @@
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import ContactForm from "./ContactForm"
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram } from "react-icons/ai";
 
 function Contact() {
+  const location = useLocation()
+
   useEffect(()=>{
     AOS.init({
       offset: 200,
@@ -50,7 +53,7 @@ function Contact() {
         </div>
 
         <div className="d-flex justify-content-between footer mt-5">
-        <a href={`/`}>
+        <a href={location.pathname === '/' ? '#home' : '#house-landing'}>
             <h2 className="text-secondary text-uppercase">Aesthetica</h2>
           </a>
           <p className="text-secondary">&copy; 2022 <span>RMFN</span></p>
