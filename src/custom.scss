@@ -142,20 +142,22 @@ html {
 }
 
 // Home Page
+#home, #house-landing {
+  .collapse-navigation {
+    display: none;
+
+    ul, .nav-branding {
+      display: none!important;
+    }
+  }
+}
+
 #home {
   background: url('./assets/img/landing-page-img.jpg');
   background-position: center;
   background-size: cover;
   min-height: 100vh;
   position: relative;
-
-  .collapse-navigation {
-    display: none;
-
-    ul {
-      display: none!important;
-    }
-  }
 
   .hero-overlay {
     height: 100%;
@@ -856,24 +858,33 @@ html {
       background-color: rgba(0,0,0,0.92);
       z-index: 100;
 
+      .nav-link, .nav-branding {
+        @include font-scheme($krona, 400);
+        color: rgba(255,255,255,0.5);
+        font-size: 20px!important;
+        text-transform: uppercase;
+        text-align: center;
+      } 
+
+      .nav-link:hover, .nav-branding:hover {
+        cursor: pointer!important;
+        color: #fff!important;
+        text-decoration: none!important;
+      }
+
+      .nav-branding {
+        align-self: center;
+        position: absolute;
+        display: block!important;
+        top: 40px;
+        font-size: 25px!important;
+      }
+
       ul {
         display: block!important;
         padding-left: 15;
         margin-left: auto;
         margin-right: auto;
-
-        .nav-link {
-          @include font-scheme($krona, 400);
-          color: rgba(255,255,255,0.5);
-          font-size: 20px!important;
-          text-transform: uppercase;
-          text-align: center;
-        } 
-
-        .nav-link:hover {
-          cursor: pointer!important;
-          color: #fff!important;
-        }
       }
     }
 

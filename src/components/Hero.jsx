@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiOutlineMenu } from "react-icons/ai";
 import Title2 from "./Title2"
 import Navbar from "./Navbar";
@@ -10,6 +11,7 @@ function Hero() {
     <>
     {openNav && (
       <div className="collapse-navigation d-flex flex-column justify-content-center align-content-center">
+        <Link to={'/'} className='nav-branding'>Aesthetica</Link>
         <ul className="navbar-nav">
           <li>
             <a href="#home" className={`nav-link`}>Home</a>

@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiOutlineMenu } from "react-icons/ai";
 
 function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
@@ -10,6 +11,7 @@ function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
     <>
     {openNav && (
       <div className="collapse-navigation d-flex flex-column justify-content-center align-content-center">
+        <Link to={'/'} className='nav-branding'>Aesthetica</Link>
         <ul className="navbar-nav">
           <li>
             <a href="#living-rooms" className={`nav-link`}>Living Room</a>
@@ -63,7 +65,7 @@ function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
     <div className="socials-overlay" data-aos="fade-right" data-aos-offset="-100" data-aos-delay="250" data-aos-duration="500">
       <div className="container">
         <div className="branding">
-            <a href="/" className="text-uppercase">Aesthetica</a>
+            <Link to={'/'} className="text-uppercase">Aesthetica</Link>
         </div>
         <div>
           <a href="https://www.facebook.com/" target={'_blank'} rel="noreferrer">
