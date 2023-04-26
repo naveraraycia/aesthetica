@@ -19,17 +19,20 @@ function Kitchen({data}) {
 
     <div className="kitchen-grid">
       <div className="container">
-        <div className="row d-flex">
+        <div className="row">
+          <div className="col-md-6 mb-4 mb-md-0 text-white">
 
-        <div className="col-md-6 d-flex flex-column text-white">
-          <div className="kitchen-description">
-            <h3>Aesthetically Designed</h3>
-            <p>From the cozy dining area and spacious kitchen to the carefully chosen finishes and fixtures, every element of this space has been carefully curated to create a warm and inviting ambiance</p>
+            <div className="kitchen-description">
+              <h3>Aesthetically Designed</h3>
+              <p>From the cozy dining area and spacious kitchen to the carefully chosen finishes and fixtures, every element of this space has been carefully curated to create a warm and inviting ambiance</p>
+            </div>
+           
+            <img src={data.kitchenImgs[1]} alt="kitchen-1" className='w-100' />
+           
           </div>
-          <div className="kitchen-photo1" style={{background: `url(${data.kitchenImgs[1]})`}}></div>
-        </div>
-        <div className="col-md-6 kitchen-photo2" style={{background: `url(${data.kitchenImgs[0]})`}}>
-
+          
+          <div className="col-md-6">
+            <img src={data.kitchenImgs[0]} alt="kitchen-1" className='w-100 h-100' />
         </div>
         </div>
       </div>

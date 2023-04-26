@@ -1,3 +1,5 @@
+// Add prop Types
+
 function AreaDescription({heading, description}) {
   return (
     <div className="area-description-container container d-flex justify-content-center flex-column align-items-center">

@@ -622,8 +622,11 @@ html {
         margin-right: 2rem;
         object-fit: cover;
       }
-
     }
+  }
+
+  .house-hero-landing.row {
+    margin-left: 0px!important;
   }
 
   .house-hero-landing{
@@ -779,20 +782,9 @@ html {
       }
     }
 
-    .kitchen-photo2, .kitchen-photo1 {
-      width: 100%!important;
-      background-position: center!important;
-      background-size: cover!important;
-    }
-
-    .kitchen-photo2 {
-      height: 500px!important;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .kitchen-photo1 {
-      height: 100%!important;
+    .w-100 {
+      object-position: center!important;
+      object-fit: cover!important;
     }
   }
 }
@@ -936,28 +928,15 @@ html {
 
   #kitchen {
     .kitchen-grid {
-
-
-      .kitchen-photo2 {
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-      
-
       .kitchen-description {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        p {
+        p, h3 {
           text-align: center!important;
         }
-      }
-
-      .kitchen-photo1 {
-        height: 300px!important;
-        margin-bottom: 15px;
       }
     }
 }
@@ -1081,13 +1060,6 @@ html {
       max-width: 350px;
       text-align: center;
       line-height: 1.5rem;
-    }
-  }
-
-  #kitchen {
-    .kitchen-photo2 {
-      margin-left: 15px;
-      margin-right: 15px;
     }
   }
 

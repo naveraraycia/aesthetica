@@ -5,8 +5,6 @@ import AreaDescription from './AreaDescription';
 import ProjectCarousel from './ProjectCarousel';
 
 function LivingRoom({data}) {
- 
-
   if(!data || data.length === 0) {
     return <Spinner />
   }

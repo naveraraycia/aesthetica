@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 
-
 function Title2({subTitle, mainTitle}) {
   return (
     <div id='title2'>

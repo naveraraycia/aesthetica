@@ -1,3 +1,4 @@
+// Add propTypes
 
 function TitleOverlay({bgImg, mainTitle, subTitle}) {
   return (

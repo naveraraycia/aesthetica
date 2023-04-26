@@ -65,7 +65,7 @@ function HousingProject() {
 
       <TitleOverlay mainTitle={'contact us'} subTitle={'if interested'} bgImg={projectData.landingImgs[0]} />
 
-      <section id="housing-contact" className="contact">
+      <section id="contact" className="contact">
         <Contact />
       </section>
     </>
