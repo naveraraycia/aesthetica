@@ -6,7 +6,7 @@ function Navbar() {
 
   return (
     
-    <div id="navbar">
+    <div id="navbar" data-aos="fade-left" data-aos-delay="350" data-aos-offset="-100" data-aos-duration="500">
       <div className="container mt-3">
         <nav className='navbar d-flex flex-row mb-3' id="main-nav">
             <>

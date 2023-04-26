@@ -37,7 +37,7 @@ function Hero() {
       </div>
     </div>
 
-    <div className="socials-overlay">
+    <div className="socials-overlay" data-aos-offset='-100' data-aos="fade-right" data-aos-delay="250" data-aos-duration="500">
       <div className="container">
         <div>
           <a href="https://www.facebook.com/" target={'_blank'} rel="noreferrer">

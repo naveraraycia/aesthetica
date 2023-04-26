@@ -17,7 +17,7 @@ function Kitchen({data}) {
       <TitleOverlay mainTitle={'kitchen & dining'} subTitle={'minimalist blueprint'} bgImg={data.kitchenImgs[0]} />
     </div>
 
-    <div className="kitchen-grid">
+    <div className="kitchen-grid" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
       <div className="container">
         <div className="row">
           <div className="col-md-6 mb-4 mb-md-0 text-white">

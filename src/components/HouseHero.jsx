@@ -31,36 +31,36 @@ function HouseHero({designTitle, heroImgs, chosen, inquired, rating}) {
     )}
 
     <div className='hero-container'>
-      <div className="sub-photos">
+      <div className="sub-photos" data-aos="fade-left" data-aos-delay="300" data-aos-duration="700">
         <img src={heroImgs[1]} alt="house 2" />
         <img src={heroImgs[2]} alt="house 3" />
       </div>
       <div className="row house-hero-landing">
         <div className="col-lg-8" style={{background: `url(${heroImgs[0]})`}}>
           <div className="hero-overlay">
-            <h1>{nameArr[0]} <span className="text-lowercase">{nameArr[1]}</span></h1>
+            <h1 data-aos="fade-right" data-aos-delay="250" data-aos-duration="500">{nameArr[0]} <span className="text-lowercase">{nameArr[1]}</span></h1>
           </div>
         </div>
         <div className="col-lg-4">
           <div>
             <div className="client-interactions">
-              <h5>{inquired}</h5>
-              <h6>Clients inquired about this design</h6>
+              <h5 data-aos="fade-left" data-aos-delay="150" data-aos-duration="500">{inquired}</h5>
+              <h6 data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">Clients inquired about this design</h6>
             </div>
             <div className="client-interactions">
-              <h5>{rating}/5</h5>
-              <h6>Client Rating</h6>
+              <h5 data-aos="fade-left" data-aos-delay="300" data-aos-duration="500">{rating}/5</h5>
+              <h6 data-aos="fade-left" data-aos-delay="350" data-aos-duration="500">Client Rating</h6>
             </div>
             <div className="client-interactions">
-              <h5>{chosen}</h5>
-              <h6>Clients chose this design</h6>
+              <h5 data-aos="fade-left" data-aos-delay="400" data-aos-duration="500">{chosen}</h5>
+              <h6 data-aos="fade-left" data-aos-delay="450" data-aos-duration="500">Clients chose this design</h6>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div className="socials-overlay">
+    <div className="socials-overlay" data-aos="fade-right" data-aos-offset="-100" data-aos-delay="250" data-aos-duration="500">
       <div className="container">
         <div className="branding">
             <a href="/" className="text-uppercase">Aesthetica</a>

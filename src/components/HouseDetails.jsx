@@ -13,15 +13,15 @@ function HouseDetails({data}) {
     <>
       <div className="row house-info-row pt-5 pb-5 d-flex justify-content-center">
           <div className="container house-info-container">
-              <div className="house-info d-flex flex-column justify-content-center align-items-center">
+              <div className="house-info d-flex flex-column justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="250" data-aos-duration="500">
               <GiBed color="#f5f5f5" size={30} />
                   <p className="text-white text-uppercase mt-2">{data.bedrooms} bedrooms</p>
               </div>
-              <div className="house-info d-flex flex-column justify-content-center align-items-center">
+              <div className="house-info d-flex flex-column justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="350" data-aos-duration="500">
               <GiBathtub color="#f5f5f5" size={30} />
                   <p className="text-white text-uppercase mt-2">{data.bathrooms} bathrooms</p>
               </div>
-              <div className="house-info d-flex flex-column justify-content-center align-items-center">
+              <div className="house-info d-flex flex-column justify-content-center align-items-center" data-aos="fade-left" data-aos-delay="450" data-aos-duration="500">
               <BsHouseDoor color="#f5f5f5" size={30} />
                   <p className="text-white text-uppercase mt-2">{data.stories} stories</p>
               </div>

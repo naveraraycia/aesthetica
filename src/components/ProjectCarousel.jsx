@@ -17,26 +17,14 @@ function ProjectCarousel({variant, data, imgs}) {
     <Carousel slide={false} indicators={false} interval={5000} nextLabel={''} prevLabel={''}>
       {imgs.map((item, index)=> (
         <Carousel.Item key={index}>
-          <a href={item} data-toggle="lightbox" data-gallery="img-gallery">
+          <a href={item} data-toggle="lightbox" data-gallery="img-gallery" data-aos="fade-left" data-aos-delay="550" data-aos-duration="500">
             <img
               className="d-block w-100"
               src={item}
               alt="First slide"
+              data-aos="fade-left" data-aos-delay="650" data-aos-duration="500"
             />
         </a>
-
-        {variant === 'with-caption' && (
-        <Carousel.Caption>
-              <div className='carousel-details d-flex justify-content-between align-items-center'>
-                <h4 className='mb-1 text-uppercase'>{data.name}</h4>
-                <h5 className='mb-0'>{data.stories} stories</h5>
-                <div className="d-flex">
-                  <h5 className='mr-5'>{data.bedrooms} bedrooms</h5>
-                  <h5>{data.bathrooms} bathrooms</h5>
-                </div>
-              </div>
-          </Carousel.Caption>
-        )}
       </Carousel.Item>
       ))}
     </Carousel>
