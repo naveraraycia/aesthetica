@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Podkova:wght@400;700&family=Varela&display=swap');
 
-
 // Input
 $input-focus-border-color: transparent;
 $input-focus-color: #F5F5F5;
@@ -27,9 +26,10 @@ $krona: 'Krona One', sans-serif;
 $podkova: 'Podkova', serif;
 $varela: 'Varela', sans-serif;
 
-// input
+// input font
 $input-font-family: $varela;
-  
+
+// mixins
 @mixin font-scheme($font, $weight){
   font-family: $font;
   font-weight: $weight;
@@ -47,9 +47,8 @@ html {
   overflow-x: hidden
 }
 
-// Component styles /////////////////////////////////////////////////////////////
+// Component styles
 #title {
- 
   h3 {
     @include font-scheme($krona, 400);
     font-size: 20px
@@ -81,7 +80,7 @@ html {
   }
 }
 
-#navbar {  /////////////////////////////////////////////////////////////////////////
+#navbar {
   z-index: 55;
   position: absolute;
   bottom: 30px;
@@ -104,15 +103,14 @@ html {
   }
 }
 
- /////////////////////////////////////////////////////////////////////////
-  .socials-overlay {
-    height: 100%;
-    width: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.50);
-    z-index: 50;
+.socials-overlay {
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.50);
+  z-index: 50;
 
     .container {
       height: 100%;
@@ -122,7 +120,7 @@ html {
       padding-bottom: 40px;
       justify-content: end;
 
-      div{
+      div {
         display: flex;
         flex-direction: column;
       }
@@ -132,19 +130,18 @@ html {
       }
     }
 
-    a {
-      margin-top: 1rem;
-    }
-
-    a:hover{
-      svg{
-        color: white!important
-      }
-    }
+  a {
+    margin-top: 1rem;
   }
 
-  //////////////////////////////////// HOME PAGE //////////////////////////////////////////
+  a:hover{
+    svg {
+      color: white!important
+    }
+  }
+}
 
+// Home Page
 #home {
   background: url('./assets/img/landing-page-img.jpg');
   background-position: center;
@@ -160,7 +157,7 @@ html {
     }
   }
 
-  .hero-overlay{
+  .hero-overlay {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -171,12 +168,10 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
   }
-
 }
 
-// ////////////// About 
+// About section
 #about {
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -204,7 +199,7 @@ html {
   }
 }
 
-// Services //////////////
+// Services section
 #services {
   margin-top: 15rem;
   margin-bottom: 10rem;
@@ -212,21 +207,23 @@ html {
   .service-cards {
     h4 {
       @include font-scheme($podkova, 400);
-      font-size: 18px
+      font-size: 18px;
     }
+
     p {
       @include font-scheme($varela, 400);
       line-height: 179%;
       font-size: 13px;
-      color: white
+      color: white;
     }
   }
 }
 
-// Projects ////////////
+// Projects section
 #projects {
   margin-top: 15rem;
   margin-bottom: 10rem;
+
   #project-item {
     position: relative;
     
@@ -257,9 +254,9 @@ html {
   }
 
   #project-item:hover {
-      .dark-overlay {
-        display: flex!important;
-        cursor: pointer!important;
+    .dark-overlay {
+      display: flex!important;
+      cursor: pointer!important;
     }
   }
 
@@ -269,7 +266,7 @@ html {
   }
 }
 
-// Team ////////////
+// Team section
 #team {
   margin-top: 15rem;
   margin-bottom: 10rem;
@@ -297,12 +294,12 @@ html {
   }
 }
 
-// Testimonials ////////////
+// Testimonials section
 #testimonial {
   padding-top: 10rem;
   padding-bottom: 15rem;
 
-  .testimonial-description{
+  .testimonial-description {
     max-width: 400px;
     color: white;
   }
@@ -327,8 +324,7 @@ html {
       color: rgba(76, 179, 243, .26) !important
     }
 
-    .slick-track
-    {
+    .slick-track {
         display: flex !important;
     }
 
@@ -336,11 +332,10 @@ html {
       display: flex!important;
     }
     
-    .slick-slide
-    {
+    .slick-slide {
         height: inherit !important;
-  
     }
+
     img {
       object-fit: cover;
       object-position: center;
@@ -352,66 +347,71 @@ html {
       font-size: 24px;
     }
 
-     h5, p {
+    h5, p {
       @include font-scheme($krona, 400)
-     }
+    }
 
-     h5 {
+    h5 {
       font-size: 12px;
-     }
+    }
 
-     p {
+    p {
       font-size: 10px;
       letter-spacing: 1px;
-     }
+    }
 
-     #comment {
+    #comment {
       font-size: 16px!important;
       line-height: 179%;
       @include font-scheme($varela, 400)
-     }
+    }
   }
 }
 
-// GET IN TOUCH ////////////
+// Get in Touch section
 #getInTouch {
-    .col-md-7{
-      .row {
-        height: 100%;
+  .col-md-7 {
+    .row {
+      height: 100%;
 
-        .col-6 {
-          background-position: center;
-          background-size: cover;
-          height: 100%;
-          width: 100%;
-        }
-      }
-      .p1 {
-        background: url('./assets/img/git-pic1.webp');
-      }
-      .p2 {
-        background: url('./assets/img/git-pic2.jpeg');
-      }
-      .p3 {
-        background: url('./assets/img/git-pic3.webp');
-      }
-      .p4 {
-        background: url('./assets/img/git-pic4.jpeg');
+      .col-6 {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
       }
     }
-  
-    .col-md-5{
-      padding: 6rem 3rem 6rem 3rem;
-      p {
-        color: white;
-        @include font-scheme($varela, 400);
-        font-size: 14px;
-      }
-    }   
+
+    .p1 {
+      background: url('./assets/img/git-pic1.webp');
+    }
+
+    .p2 {
+      background: url('./assets/img/git-pic2.jpeg');
+    }
+
+    .p3 {
+      background: url('./assets/img/git-pic3.webp');
+    }
+
+    .p4 {
+      background: url('./assets/img/git-pic4.jpeg');
+    }
   }
+  
+  .col-md-5 {
+    padding: 6rem 3rem 6rem 3rem;
+
+    p {
+      color: white;
+      @include font-scheme($varela, 400);
+      font-size: 14px;
+    }
+  }   
+}
 
 
-// Contact ////////////
+// Contact section
 .contact {
   padding-top: 9rem;
   padding-bottom: 2rem;
@@ -465,76 +465,75 @@ html {
   }
 }
 
-  .title-header-container {
-    position: relative;
-    height: 500px;
-    width: 100%;
-    background-position: center!important;
-    background-size: cover!important;
+.title-header-container {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-position: center!important;
+  background-size: cover!important;
+}
+
+.title-container {
+  margin-top: 10rem;
+}
+
+.title-header-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.54);
+  @include font-scheme($krona, 400);
+  color: white;
+
+  h1 {
+    letter-spacing: 1rem;
+    font-size: 34px;
   }
 
-  .title-container {
-    margin-top: 10rem;
+  h6 {
+    margin-top: 1rem;
+    letter-spacing: 0.63rem;
   }
+}
 
-  .title-header-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,.54);
+.area-description-container {
+  margin-top: 5rem;
+
+  .heading-set {
     @include font-scheme($krona, 400);
-    color: white;
+    font-size: 20px;
 
-    h1 {
-      letter-spacing: 1rem;
-      font-size: 34px;
-    }
-
-    h6 {
-      margin-top: 1rem;
-      letter-spacing: 0.63rem;
-    }
+    span:nth-child(1), span:nth-child(2) {
+      margin-right: 2rem;
+    } 
   }
 
-  .area-description-container {
-    margin-top: 5rem;
-    .heading-set {
-      @include font-scheme($krona, 400);
-      font-size: 20px;
+  .area-description {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 
-      span:nth-child(1), span:nth-child(2){
-        margin-right: 2rem;
-      } 
-    }
-
-    .area-description {
-      margin-top: 2rem;
-      margin-bottom: 5rem;
-
-      p {
-        text-align: center;
-        @include font-scheme($varela, 400);
-        max-width: 670px;
-        line-height: 2rem;
-
-      }
+    p {
+      text-align: center;
+      @include font-scheme($varela, 400);
+      max-width: 670px;
+      line-height: 2rem;
     }
   }
+}
 
-  .area-carousel-container {
-    .carousel-item {
-      img {
-        height: 500px!important;
-        object-fit: cover!important;
-        object-position: center!important;
-      }
+.area-carousel-container {
+  .carousel-item {
+    img {
+      height: 500px!important;
+      object-fit: cover!important;
+      object-position: center!important;
     }
   }
+}
 
 
-// INDIVIDUAL HOUSE PROJECT PAGES //////////////////
 #house-landing {
   min-height: 100vh;
   position: relative;
@@ -543,7 +542,7 @@ html {
     height: 100vh;
     width: 100%;
 
-    .sub-photos{
+    .sub-photos {
       position: absolute;
       display: flex;
       z-index: 150;
@@ -563,7 +562,10 @@ html {
     margin-left: 0px!important;
   }
 
-  .house-hero-landing{
+  .house-hero-landing {
+    height: 100%!important;
+    width: 100%!important;
+
     .col-lg-8 {
       background-position: center!important;
       background-size: cover!important;
@@ -611,17 +613,16 @@ html {
           max-width: 180px;
           line-height: 1.4rem;
         }
-
       }
     }
-    height: 100%!important;
-    width: 100%!important;
+
   }
 
   .socials-overlay {
     .container {
       justify-content: space-between;
     }
+
     .branding {
       a {
         transform: rotate(90deg);
@@ -631,15 +632,16 @@ html {
         margin-top: 8rem;
 
       }
-      a:hover{
+
+      a:hover {
         text-decoration: none;
       }
     }
   }
 }
 
+// Individual House Page
 #house-details {
-
   #navbar {
   z-index: 55;
   position: relative;
@@ -661,32 +663,36 @@ html {
     cursor: pointer!important;
     color: #fff!important;
   }
-}
+ }
 
-.house-info-row {
+ .house-info-row {
   background-color: black;
-}
+ }
 
-.house-info-container {
+ .house-info-container {
   display: flex;
   justify-content: center;
 
-  .house-info:nth-child(1), .house-info:nth-child(2){
+  .house-info:nth-child(1), .house-info:nth-child(2) {
     margin-right: 3rem;
   }
-}
+ }
 }
 
-//////////////////////////////////////////////////////
+#bedrooms, #bathrooms {
+  margin-bottom: 10rem;
+}
 
+
+// Kitchen section
 #kitchen {
   margin-bottom: 10rem;
   
-  .kitchen-grid{
+  .kitchen-grid {
     margin-top: 10rem!important;
     margin-bottom: 10rem!important;
 
-    .kitchen-description{
+    .kitchen-description {
       padding: 2rem;
 
       h3 {
@@ -711,17 +717,13 @@ html {
   }
 }
 
-#bedrooms, #bathrooms {
-  margin-bottom: 10rem;
-}
-
 
 // Media Query
 @media (max-width: 768px) {
   #title {
-      h3, h1 {
-        text-align: center;
-      }
+    h3, h1 {
+      text-align: center;
+    }
   }
 
   #title2 {
@@ -740,7 +742,6 @@ html {
   #navbar {
     display: none!important;
   }
-
 
   .area-description-container .heading-set {
     font-size: 11px;
@@ -809,7 +810,7 @@ html {
         h3, h1 {
           text-align: center!important;
         }
-     }
+      }
     }
   }
 
@@ -832,7 +833,7 @@ html {
         }
       }
     }
-}
+  }
 }
 
 
@@ -898,15 +899,17 @@ html {
         height: 100%;
         padding-bottom: 0px;
 
-        div{
+        div {
           flex-direction: row!important;
         }
+
         .menu-icon {
           display: flex;
         }
-        .menu-icon:hover{
+
+        .menu-icon:hover {
           cursor: pointer;
-          svg{
+          svg {
             color: white!important;
           }
         }
@@ -930,7 +933,7 @@ html {
       }
     }
 
-    #client-reviews{
+    #client-reviews {
       .d-flex {
         text-align: center;
       }
@@ -952,19 +955,19 @@ html {
   }
 
   #house-landing {
-    .sub-photos{
+    .sub-photos {
       display: none!important;
     }
 
-    .house-hero-landing{
-      .hero-overlay{
+    .house-hero-landing {
+      .hero-overlay {
         padding-top: 0px!important;
         align-items: center;
 
         h1 {
           text-align: center;
 
-          span{
+          span {
             font-size: 36px!important;
           }
         }
@@ -980,19 +983,9 @@ html {
         justify-content: space-between;
       }
 
-      .branding{
+      .branding {
         display: none!important;
       }
-    }
-
-
-    img {
-      object-fit: cover;
-      object-position: center;
-      height: 400px!important;
-     }
-    .carousel-caption {
-      display: none;
     }
   }
 

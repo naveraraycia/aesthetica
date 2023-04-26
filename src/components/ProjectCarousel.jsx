@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import Carousel from 'react-bootstrap/Carousel';
 import Spinner from './Spinner'
+import Carousel from 'react-bootstrap/Carousel';
 
 function ProjectCarousel({variant, data, imgs}) {
 

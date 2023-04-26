@@ -1,7 +1,6 @@
 import { useLocation } from 'react-router-dom';
-import 'aos/dist/aos.css'
-import ContactForm from "./ContactForm"
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram } from "react-icons/ai";
+import ContactForm from "./ContactForm"
 
 function Contact() {
   const location = useLocation()

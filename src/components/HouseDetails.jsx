@@ -1,6 +1,6 @@
-import Spinner from "./Spinner"
 import { BsHouseDoor } from "react-icons/bs";
 import { GiBed, GiBathtub } from "react-icons/gi";
+import Spinner from "./Spinner"
 import Navbar from './Navbar'
 
 function HouseDetails({data}) {

@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
+import Spinner from "./Spinner"
 import TitleOverlay from './TitleOverlay';
 import AreaDescription from './AreaDescription';
 import ProjectCarousel from './ProjectCarousel';
-import Spinner from "./Spinner"
 
 function Bathroom({data}) {
   if(!data || data.length === 0) {

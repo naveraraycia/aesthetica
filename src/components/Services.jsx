@@ -1,6 +1,6 @@
+import { GiPaintBucket, GiClawHammer, GiPalette, GiTalk, GiPencilRuler, GiBed } from "react-icons/gi";
 import Title from "./Title"
 import Card from "./Card"
-import { GiPaintBucket, GiClawHammer, GiPalette, GiTalk, GiPencilRuler, GiBed } from "react-icons/gi";
 
 function Services() {
 

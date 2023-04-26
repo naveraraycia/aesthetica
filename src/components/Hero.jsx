@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Title2 from "./Title2"
 import { AiFillFacebook, AiFillTwitterSquare, AiFillInstagram, AiOutlineMenu } from "react-icons/ai";
+import Title2 from "./Title2"
 import Navbar from "./Navbar";
 
 function Hero() {

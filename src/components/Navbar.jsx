@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
 import { useLocation } from "react-router-dom"
+import PropTypes from 'prop-types'
 
 function Navbar() {
   const location = useLocation()

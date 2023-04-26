@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+
 function TeamMember({img, name, position}) {
   return (
     <div className="d-flex flex-column align-items-center" id="team-member">
