@@ -719,6 +719,23 @@ html {
   }
 }
 
+// Not Found Page
+#not-found {
+  height: 100vh;
+
+  h1 {
+    @include font-scheme($krona, 400);
+  }
+
+  p {
+    @include font-scheme($varela, 400);
+  }
+
+  p:nth-child(3){
+    font-size: 14px!important;
+  }
+}
+
 
 // Media Query
 @media (max-width: 768px) {
