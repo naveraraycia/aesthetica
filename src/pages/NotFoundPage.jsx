@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
+
 function NotFoundPage() {
+  
   return (
     <div id="not-found" className="bg-gray d-flex align-items-center">
       <div className="container d-flex align-items-center flex-column">
