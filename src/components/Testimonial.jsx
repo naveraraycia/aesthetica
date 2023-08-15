@@ -3,10 +3,10 @@ import Card from "./Card"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import img1 from '../assets/img/dp1.jpg'
-import img2 from '../assets/img/dp2.jpg'
-import img3 from '../assets/img/dp3.jpg'
-import img4 from '../assets/img/dp4.jpg'
+import img1 from '../assets/img/dp1.webp'
+import img2 from '../assets/img/dp2.webp'
+import img3 from '../assets/img/dp3.webp'
+import img4 from '../assets/img/dp4.webp'
 
 function Testimonial() {
   const settings = {

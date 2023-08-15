@@ -1,9 +1,9 @@
 import Title from "./Title"
 import TeamMember from "./TeamMember"
-import img1 from '../assets/img/team1.jpg'
-import img2 from '../assets/img/team2.jpg'
-import img3 from '../assets/img/team3.jpg'
-import img4 from '../assets/img/team4.jpg'
+import img1 from '../assets/img/team1.webp'
+import img2 from '../assets/img/team2.webp'
+import img3 from '../assets/img/team3.webp'
+import img4 from '../assets/img/team4.webp'
 
 
 function Team() {

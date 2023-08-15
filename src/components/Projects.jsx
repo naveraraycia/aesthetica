@@ -1,9 +1,9 @@
 import Project from './Project'
 import Title from './Title'
-import img1 from '../assets/img/project1.jpg'
-import img2 from '../assets/img/aboutImg2.jpg'
-import img3 from '../assets/img/project3.jpg'
-import img4 from '../assets/img/project4.jpg'
+import img1 from '../assets/img/project1.webp'
+import img2 from '../assets/img/aboutImg2.webp'
+import img3 from '../assets/img/project3.webp'
+import img4 from '../assets/img/project4.webp'
 
 function Projects() {
  

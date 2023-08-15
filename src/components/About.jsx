@@ -1,6 +1,6 @@
 import Title from './Title'
-import about1 from '../assets/img/aboutImg1.jpg'
-import about2 from '../assets/img/aboutImg2.jpg'
+import about1 from '../assets/img/aboutImg1.webp'
+import about2 from '../assets/img/aboutImg2.webp'
 
 function About() {
   return (
